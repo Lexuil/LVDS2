@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 27 15:44:28 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "led" LOCATE = SITE "P88" LEVEL 1;
+COMP "clock_n" LOCATE = SITE "P94" LEVEL 1;
+COMP "clock_p" LOCATE = SITE "P95" LEVEL 1;
+COMP "channel1_n" LOCATE = SITE "P78" LEVEL 1;
+COMP "channel1_p" LOCATE = SITE "P79" LEVEL 1;
+COMP "channel2_n" LOCATE = SITE "P80" LEVEL 1;
+COMP "channel2_p" LOCATE = SITE "P81" LEVEL 1;
+COMP "channel3_n" LOCATE = SITE "P82" LEVEL 1;
+COMP "channel3_p" LOCATE = SITE "P83" LEVEL 1;
+SCHEMATIC END;
+

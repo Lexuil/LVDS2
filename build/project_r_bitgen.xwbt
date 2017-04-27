@@ -1,0 +1,7 @@
+INFILE=/home/lexuil/Descargas/LVDS1/build/project_r.ncd
+OUTFILE=/home/lexuil/Descargas/LVDS1/build/project_r.bit
+FAMILY=Spartan6
+PART=xc6slx4-2tqg144
+WORKINGDIR=/home/lexuil/Descargas/LVDS1/build
+LICENSE=WebPack
+USER_INFO=211315887_0_0_657

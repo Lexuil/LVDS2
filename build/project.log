@@ -1,0 +1,915 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : xc6slx4-2tqg144
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : LVDS_test
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/LVDS_test.v" into library work
+Parsing module <LVDS_test>.
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/serializer.v" into library work
+Parsing module <serializer>.
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/lvds_clockgen.v" into library work
+Parsing module <lvds_clockgen>.
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/video_lvds.v" into library work
+Parsing module <video_lvds>.
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/ram.v" into library work
+Parsing module <ram>.
+Analyzing Verilog file "/home/lexuil/Descargas/LVDS1/dvi_decoder.v" into library work
+Parsing module <dvi_decoder>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 56: Port CLK180 is not connected to this instance
+
+Elaborating module <LVDS_test>.
+Reading initialization file \"home/lexuil/Descargas/LVDS1//scriptimg2ram/image.mem\".
+WARNING:HDLCompiler:568 - "Unknown" Line 0: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:1670 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 159: Signal <ram> in initial block is partially initialized.
+WARNING:HDLCompiler:1127 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 43: Assignment to clkprueba ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 51: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 52: Result of 32-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <DCM_SP(CLKIN_PERIOD=20,CLKFX_MULTIPLY=7,CLKFX_DIVIDE=5)>.
+WARNING:HDLCompiler:1127 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 68: Assignment to clk_lckd ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <video_lvds>.
+
+Elaborating module <OBUFDS(IOSTANDARD="BLVDS_25")>.
+WARNING:HDLCompiler:1016 - "/home/lexuil/Descargas/LVDS1/lvds_clockgen.v" Line 57: Port PRE is not connected to this instance
+
+Elaborating module <lvds_clockgen>.
+
+Elaborating module <DCM_SP(CLKIN_PERIOD="15.625",DESKEW_ADJUST="0",CLKFX_MULTIPLY=7,CLKFX_DIVIDE=2)>.
+
+Elaborating module <FDP>.
+
+Elaborating module <serializer>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE")>.
+WARNING:HDLCompiler:413 - "/home/lexuil/Descargas/LVDS1/serializer.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/lexuil/Descargas/LVDS1/serializer.v" Line 83: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 125: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 138: Signal <ContadorX> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 139: Signal <ContadorX> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 140: Signal <ContadorY> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 141: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 142: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/lexuil/Descargas/LVDS1/LVDS_test.v" Line 143: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LVDS_test>.
+    Related source file is "/home/lexuil/Descargas/LVDS1/LVDS_test.v".
+        ScreenX = 1365
+        ScreenY = 768
+        BlankingVertical = 12
+        BlankingHorizontal = 50
+        tm = 4095
+WARNING:Xst:2999 - Signal 'ram', unconnected in block 'LVDS_test', is tied to its initial value.
+    Found 11-bit register for signal <ContadorY>.
+    Found 8-bit register for signal <Blue>.
+    Found 8-bit register for signal <Red>.
+    Found 8-bit register for signal <Green>.
+    Found 31-bit register for signal <Contador>.
+    Found 1-bit register for signal <led>.
+    Found 11-bit register for signal <ContadorX>.
+    Found 12-bit adder for signal <n0154[11:0]> created at line 51.
+    Found 12-bit adder for signal <n0156[11:0]> created at line 52.
+    Found 31-bit adder for signal <Contador[30]_GND_1_o_add_51_OUT> created at line 125.
+    Found 23-bit adder for signal <n0148> created at line 141.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_64_OUT<11:0>> created at line 141.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_69_OUT<11:0>> created at line 142.
+    Found 11x11-bit multiplier for signal <PWR_1_o_ContadorY[10]_MuLt_60_OUT> created at line 141.
+    Found 23x2-bit multiplier for signal <BUS_0005_PWR_1_o_MuLt_62_OUT> created at line 141.
+    Found 4096x8-bit dual-port Read Only RAM <Mram_ram> for signal <ram>.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Gimg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Bimg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rimg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <PWR_1_o_ContadorX[10]_LessThan_1_o> created at line 45
+    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_2_o> created at line 45
+    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_4_o> created at line 46
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_5_o> created at line 46
+    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_7_o> created at line 47
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_8_o> created at line 47
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_21_o> created at line 103
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_22_o> created at line 104
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_23_o> created at line 105
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_24_o> created at line 106
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_25_o> created at line 107
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_26_o> created at line 108
+    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_27_o> created at line 109
+    Found 23-bit comparator greater for signal <BUS_0004_GND_1_o_LessThan_58_o> created at line 138
+    Found 11-bit comparator lessequal for signal <ContadorX[10]_GND_1_o_LessThan_59_o> created at line 139
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_60_o> created at line 140
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred  24 Latch(s).
+	inferred  16 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <LVDS_test> synthesized.
+
+Synthesizing Unit <video_lvds>.
+    Related source file is "/home/lexuil/Descargas/LVDS1/video_lvds.v".
+WARNING:Xst:647 - Input <Red<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Green<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Blue<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <video_lvds> synthesized.
+
+Synthesizing Unit <lvds_clockgen>.
+    Related source file is "/home/lexuil/Descargas/LVDS1/lvds_clockgen.v".
+    Summary:
+	no macro.
+Unit <lvds_clockgen> synthesized.
+
+Synthesizing Unit <serializer>.
+    Related source file is "/home/lexuil/Descargas/LVDS1/serializer.v".
+    Found 3-bit register for signal <outcount>.
+    Found 2-bit register for signal <shiftdata>.
+    Found 14-bit register for signal <n0019>.
+    Found 1-bit register for signal <datacount>.
+    Found 1-bit register for signal <DataInBuffer>.
+    Found 1-bit register for signal <SendOK>.
+    Found 1-bit adder for signal <datacount_PWR_9_o_add_1_OUT<0>> created at line 64.
+    Found 3-bit adder for signal <outcount[2]_GND_9_o_add_8_OUT> created at line 83.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+Unit <serializer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4096x8-bit dual-port Read Only RAM                    : 1
+ 4096x8-bit single-port Read Only RAM                  : 1
+# Multipliers                                          : 2
+ 11x11-bit multiplier                                  : 1
+ 23x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 14
+ 1-bit adder                                           : 4
+ 12-bit adder                                          : 2
+ 12-bit subtractor                                     : 2
+ 23-bit adder                                          : 1
+ 3-bit adder                                           : 4
+ 31-bit adder                                          : 1
+# Registers                                            : 31
+ 1-bit register                                        : 13
+ 11-bit register                                       : 2
+ 14-bit register                                       : 4
+ 2-bit register                                        : 4
+ 3-bit register                                        : 4
+ 31-bit register                                       : 1
+ 8-bit register                                        : 3
+# Latches                                              : 24
+ 1-bit latch                                           : 24
+# Comparators                                          : 16
+ 11-bit comparator greater                             : 14
+ 11-bit comparator lessequal                           : 1
+ 23-bit comparator greater                             : 1
+# Multiplexers                                         : 47
+ 2-bit 2-to-1 multiplexer                              : 24
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <Red_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Red_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Blue_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Blue_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Green_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Green_7> of sequential type is unconnected in block <LVDS_test>.
+
+Synthesizing (advanced) Unit <LVDS_test>.
+The following registers are absorbed into counter <Contador>: 1 register on signal <Contador>.
+The following registers are absorbed into counter <ContadorX>: 1 register on signal <ContadorX>.
+	Multiplier <Mmult_PWR_1_o_ContadorY[10]_MuLt_60_OUT> in block <LVDS_test> and adder/subtractor <Madd_n0148> in block <LVDS_test> are combined into a MAC<Maddsub_PWR_1_o_ContadorY[10]_MuLt_60_OUT>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BUS_0005_PWR_1_o_MuLt_62_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <GND_1_o_GND_1_o_sub_64_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     addrB          | connected to signal <GND_1_o_GND_1_o_sub_69_OUT> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <LVDS_test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <serializer>.
+The following registers are absorbed into counter <outcount>: 1 register on signal <outcount>.
+The following registers are absorbed into counter <datacount>: 1 register on signal <datacount>.
+Unit <serializer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4096x8-bit dual-port distributed Read Only RAM        : 1
+ 4096x8-bit single-port distributed Read Only RAM      : 1
+# MACs                                                 : 1
+ 11x11-to-23-bit MAC                                   : 1
+# Multipliers                                          : 1
+ 23x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 3
+ 12-bit adder                                          : 1
+ 12-bit subtractor                                     : 2
+# Counters                                             : 10
+ 1-bit up counter                                      : 4
+ 11-bit up counter                                     : 1
+ 3-bit up counter                                      : 4
+ 31-bit up counter                                     : 1
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+# Comparators                                          : 16
+ 11-bit comparator greater                             : 14
+ 11-bit comparator lessequal                           : 1
+ 23-bit comparator greater                             : 1
+# Multiplexers                                         : 107
+ 1-bit 2-to-1 multiplexer                              : 88
+ 2-bit 2-to-1 multiplexer                              : 8
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    Bimg_0 in unit <LVDS_test>
+    Bimg_1 in unit <LVDS_test>
+    Bimg_2 in unit <LVDS_test>
+    Bimg_3 in unit <LVDS_test>
+    Bimg_4 in unit <LVDS_test>
+    Bimg_5 in unit <LVDS_test>
+    Bimg_6 in unit <LVDS_test>
+    Bimg_7 in unit <LVDS_test>
+    Gimg_0 in unit <LVDS_test>
+    Gimg_1 in unit <LVDS_test>
+    Gimg_2 in unit <LVDS_test>
+    Gimg_3 in unit <LVDS_test>
+    Gimg_4 in unit <LVDS_test>
+    Gimg_6 in unit <LVDS_test>
+    Gimg_7 in unit <LVDS_test>
+    Gimg_5 in unit <LVDS_test>
+
+
+Optimizing unit <LVDS_test> ...
+
+Optimizing unit <video_lvds> ...
+
+Optimizing unit <serializer> ...
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_11> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_10> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_9> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_4> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_3> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_2> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Rimg_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Rimg_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Gimg_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Gimg_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Bimg_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Bimg_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Red_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Red_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Blue_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Blue_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Green_6> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Green_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Mram_ram211> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram212> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram213> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram214> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram215> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram216> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram217> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram218> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram219> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram220> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram223> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram221> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram222> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram224> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram225> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram226> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram227> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram228> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram229> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram232> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram230> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram231> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram233> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram234> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram235> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram236> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram237> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram238> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram241> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram239> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram240> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram242> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram243> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram244> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram245> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram246> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram247> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram248> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram249> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram250> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram251> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram252> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram253> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram254> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram255> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram258> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram256> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram257> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram259> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram260> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram261> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram262> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram263> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram264> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram267> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram265> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram266> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram268> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram269> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram270> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram271> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram272> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram273> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ram274> of sequential type is unconnected in block <MTP_>.
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram2> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram21> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram24> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram25> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram30> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram33> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram34> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram35> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram36> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram39> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram37> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram38> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram40> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram41> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram42> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram43> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram44> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram45> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram48> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram46> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram47> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram49> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram50> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram51> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram52> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram53> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram54> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram57> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram55> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram56> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram58> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram59> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram60> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram61> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram63> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram64> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram65> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram66> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram67> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram68> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram69> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram70> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram71> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram74> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram72> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram73> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram75> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram76> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram77> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram78> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram79> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram80> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram83> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram81> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram82> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram84> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram85> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram86> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram87> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram88> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram89> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram92> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram90> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram91> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram93> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram94> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram95> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram96> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram97> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram98> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram99> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram100> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram101> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram102> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram103> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram104> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram105> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram106> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram109> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram107> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram108> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram110> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram113> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram114> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram115> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram116> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram117> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram120> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram118> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram119> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram122> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram123> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram124> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram125> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram126> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram127> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram130> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram128> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram129> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram132> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram133> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram134> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram135> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram136> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram137> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram138> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram139> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram140> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram142> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram143> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram144> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram145> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram146> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram149> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram147> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram148> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram150> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram152> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram153> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram154> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram155> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram156> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram159> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram157> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram158> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram160> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram161> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram162> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram163> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram164> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram165> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram168> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram166> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram167> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram169> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram170> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram172> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram173> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram174> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram175> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram176> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram178> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram179> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram180> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram182> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram183> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram184> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram187> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram185> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram186> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram188> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram189> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram190> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram192> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram193> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram194> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram197> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram195> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram196> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram198> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram199> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram200> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram201> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram202> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram203> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram206> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram204> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram205> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram207> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram208> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram209> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram3>, <Mram_ram210> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram1>, <Mram_ram177> are equivalent, second RAM is removed
+WARNING:Xst:1293 - FF/Latch <Contador_27> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Contador_28> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Contador_29> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Contador_30> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/datacount> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/datacount> <videoencoder/channel2_ser/datacount> <videoencoder/channel1_ser/datacount> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_8> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <videoencoder/clockgenerator/lvdsclkman/buffer_0_13> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_0> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_0> <videoencoder/channel2_ser/outcount_0> <videoencoder/channel1_ser/outcount_0> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_1> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_1> <videoencoder/channel2_ser/outcount_1> <videoencoder/channel1_ser/outcount_1> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_2> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_2> <videoencoder/channel2_ser/outcount_2> <videoencoder/channel1_ser/outcount_2> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/DataInBuffer> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/DataInBuffer> <videoencoder/channel2_ser/DataInBuffer> <videoencoder/channel1_ser/DataInBuffer> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/SendOK> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/SendOK> <videoencoder/channel2_ser/SendOK> <videoencoder/channel1_ser/SendOK> 
+Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 13.
+FlipFlop led has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 133
+ Flip-Flops                                            : 133
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 413
+#      GND                         : 1
+#      INV                         : 26
+#      LUT1                        : 48
+#      LUT2                        : 36
+#      LUT3                        : 65
+#      LUT4                        : 15
+#      LUT5                        : 11
+#      LUT6                        : 44
+#      MUXCY                       : 77
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 83
+# FlipFlops/Latches                : 155
+#      FD                          : 13
+#      FDC                         : 55
+#      FDCE                        : 8
+#      FDE                         : 11
+#      FDR                         : 46
+#      LD                          : 12
+#      LDP                         : 6
+#      ODDR2                       : 4
+# RAMS                             : 2
+#      RAM128X1D                   : 2
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 6
+#      IBUFG                       : 1
+#      OBUF                        : 1
+#      OBUFDS                      : 4
+# DCMs                             : 2
+#      DCM_SP                      : 2
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             154  out of   4800     3%  
+ Number of Slice LUTs:                  253  out of   2400    10%  
+    Number used as Logic:               245  out of   2400    10%  
+    Number used as Memory:                8  out of   1200     0%  
+       Number used as RAM:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    264
+   Number with an unused Flip Flop:     110  out of    264    41%  
+   Number with an unused LUT:            11  out of    264     4%  
+   Number of fully used LUT-FF pairs:   143  out of    264    54%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of DSP48A1s:                      1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)       | Load  |
+----------------------------------------------------------------------------+-----------------------------+-------+
+clk                                                                         | DCM_SP:CLKFX+DCM_SP:CLK0    | 121   |
+ContadorY[10]_GND_1_o_LessThan_60_o(ContadorY[10]_GND_1_o_LessThan_60_o12:O)| NONE(*)(Rimg_4)             | 6     |
+clk                                                                         | DCM_SP:CLKFX+DCM_SP:CLKFX   | 16    |
+clk                                                                         | DCM_SP:CLKFX+DCM_SP:CLKFX180| 4     |
+Gimg_5_G(Gimg_5_G:O)                                                        | NONE(*)(Gimg_5)             | 12    |
+N0                                                                          | NONE(Mram_ram1)             | 2     |
+----------------------------------------------------------------------------+-----------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 16.606ns (Maximum Frequency: 60.219MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 16.606ns (frequency: 60.219MHz)
+  Total number of paths / destination ports: 2878 / 267
+-------------------------------------------------------------------------
+Delay:               3.389ns (Levels of Logic = 1)
+  Source:            videoencoder/clockgenerator/lvdsclkman/outcount_0 (FF)
+  Destination:       videoencoder/clockgenerator/lvdsclkman/shiftdata_1 (FF)
+  Source Clock:      clk rising 4.9X
+  Destination Clock: clk rising 4.9X
+
+  Data Path: videoencoder/clockgenerator/lvdsclkman/outcount_0 to videoencoder/clockgenerator/lvdsclkman/shiftdata_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.525   1.369  videoencoder/clockgenerator/lvdsclkman/outcount_0 (videoencoder/clockgenerator/lvdsclkman/outcount_0)
+     LUT4:I2->O            8   0.250   0.943  videoencoder/clockgenerator/lvdsclkman/_n0067_inv1 (videoencoder/clockgenerator/lvdsclkman/_n0067_inv)
+     FDCE:CE                   0.302          videoencoder/clockgenerator/lvdsclkman/shiftdata_0
+    ----------------------------------------
+    Total                      3.389ns (1.077ns logic, 2.312ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            led_1 (FF)
+  Destination:       led (PAD)
+  Source Clock:      clk rising 1.4X
+
+  Data Path: led_1 to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  led_1 (led_1)
+     OBUF:I->O                 2.912          led_OBUF (led)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ContadorY[10]_GND_1_o_LessThan_60_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |   13.862|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gimg_5_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |   14.476|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock N0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.372|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+ContadorY[10]_GND_1_o_LessThan_60_o|         |    1.695|         |         |
+Gimg_5_G                           |         |    1.695|         |         |
+clk                                |    6.169|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.36 secs
+ 
+--> 
+
+
+Total memory usage is 387812 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  138 (   0 filtered)
+Number of infos    :  200 (   0 filtered)
+

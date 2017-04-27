@@ -1,0 +1,14 @@
+#OSC
+NET "clk"       LOC = "P84" | IOSTANDARD = LVCMOS33;
+
+NET led   LOC = "P88";
+
+NET "channel1_p" LOC = P79 | IOSTANDARD = BLVDS_25; 
+NET "channel1_n" LOC = P78 | IOSTANDARD = BLVDS_25;
+NET "channel2_p" LOC = P81 | IOSTANDARD = BLVDS_25;
+NET "channel2_n" LOC = P80 | IOSTANDARD = BLVDS_25;
+NET "channel3_p" LOC = P83 | IOSTANDARD = BLVDS_25;
+NET "channel3_n" LOC = P82 | IOSTANDARD = BLVDS_25;
+#CLOCK
+NET "clock_p" LOC = P95 | IOSTANDARD = BLVDS_25;
+NET "clock_n" LOC = P94 | IOSTANDARD = BLVDS_25;
