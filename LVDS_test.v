@@ -135,13 +135,11 @@ end
 parameter tm = (1<<12) -1;
 reg    [7:0] ram [0:tm];
 always @(clk6x) begin
-	if ((ContadorX+ (ScreenX*ContadorY))< 300000) begin
-		if(ContadorX < 102) begin
-			if(ContadorY < 102) begin
-				Gimg = ram[(ContadorX+ (ScreenX*ContadorY))*3 -2];
-				Bimg = ram[(ContadorX+ (ScreenX*ContadorY))*3 -1];
-				Rimg = ram[(ContadorX+ (ScreenX*ContadorY))*3];
-			end
+	if ((ContadorX+ (ScreenX*ContadorY))< 300520) begin
+		if((ContadorX < 101) & (ContadorY < 101)) begin
+			Gimg = ram[(ContadorX+ (ScreenX*ContadorY))+1];
+			Bimg = ram[(ContadorX+ (ScreenX*ContadorY))+2];
+			Rimg = ram[(ContadorX+ (ScreenX*ContadorY))+3];
 		end else begin
 			Gimg = 8'h00;
 			Bimg = 8'h00;

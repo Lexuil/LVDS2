@@ -4,7 +4,7 @@ Loading device for application Rf_Device from file '6slx4.nph' in environment
 /opt/Xilinx/14.7/ISE_DS/ISE/.
    "LVDS_test" is an NCD, version 3.2, device xc6slx4, package tqg144, speed -2
 
-Thu Apr 27 15:44:55 2017
+Thu Apr 27 17:22:35 2017
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -l -w -g TdoPin:PULLNONE -g DonePin:PULLUP -g CRC:enable -g StartUpClk:CCLK project_r.ncd 
 
@@ -126,13 +126,6 @@ Summary of Bitgen Options:
 No constraints file was processed.
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net Gimg_5_G is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   ContadorY[10]_GND_1_o_LessThan_60_o is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM comp
    videoencoder/clockgenerator/dcm_clk, consult the device Data Sheet.
@@ -143,7 +136,7 @@ WARNING:PhysDesignRules:774 - Unexpected DCM configuration. CLKOUT_PHASE_SHIFT
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM comp dcm_main, consult the
    device Data Sheet.
-DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Saving ll file in "project_r.ll".
 Creating bit map...
