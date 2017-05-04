@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-lexuil::  Thu Apr 27 17:22:11 2017
+lexuil::  Wed May 03 17:45:39 2017
 
 par -w project.ncd project_r.ncd 
 
@@ -26,36 +26,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   126 out of   4,800    2%
-    Number used as Flip Flops:                 126
+  Number of Slice Registers:                   163 out of   4,800    3%
+    Number used as Flip Flops:                 163
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        199 out of   2,400    8%
-    Number used as logic:                      185 out of   2,400    7%
-      Number using O6 output only:              62
-      Number using O5 output only:              70
-      Number using O5 and O6:                   53
+  Number of Slice LUTs:                        226 out of   2,400    9%
+    Number used as logic:                      220 out of   2,400    9%
+      Number using O6 output only:              64
+      Number using O5 output only:              92
+      Number using O5 and O6:                   64
       Number used as ROM:                        0
-    Number used as Memory:                       8 out of   1,200    1%
-      Number used as Dual Port RAM:              8
-        Number using O6 output only:             8
-        Number using O5 output only:             0
-        Number using O5 and O6:                  0
-      Number used as Single Port RAM:            0
-      Number used as Shift Register:             0
+    Number used as Memory:                       0 out of   1,200    0%
     Number used exclusively as route-thrus:      6
       Number with same-slice register load:      0
       Number with same-slice carry load:         6
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    66 out of     600   11%
-  Number of MUXCYs used:                        88 out of   1,200    7%
-  Number of LUT Flip Flop pairs used:          200
-    Number with an unused Flip Flop:           112 out of     200   56%
-    Number with an unused LUT:                   1 out of     200    1%
-    Number of fully used LUT-FF pairs:          87 out of     200   43%
+  Number of occupied Slices:                    75 out of     600   12%
+  Number of MUXCYs used:                       132 out of   1,200   11%
+  Number of LUT Flip Flop pairs used:          227
+    Number with an unused Flip Flop:           105 out of     227   46%
+    Number with an unused LUT:                   1 out of     227    1%
+    Number of fully used LUT-FF pairs:         121 out of     227   53%
     Number of slice register sites lost
       to control set restrictions:               0 out of   4,800    0%
 
@@ -71,7 +65,7 @@ IO Utilization:
     IOB Flip Flops:                              9
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of      12    0%
+  Number of RAMB16BWERs:                         4 out of      12   33%
   Number of RAMB8BWERs:                          0 out of      24    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
@@ -94,7 +88,7 @@ Specific Feature Utilization:
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
   Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            1 out of       8   12%
+  Number of DSP48A1s:                            0 out of       8    0%
   Number of ICAPs:                               0 out of       1    0%
   Number of PCILOGICSEs:                         0 out of       2    0%
   Number of PLL_ADVs:                            0 out of       2    0%
@@ -106,19 +100,19 @@ Specific Feature Utilization:
 Overall effort level (-ol):   Standard 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 6 secs 
-Finished initial Timing Analysis.  REAL time: 6 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 Starting Router
 
 
-Phase  1  : 1053 unrouted;      REAL time: 6 secs 
+Phase  1  : 1085 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 747 unrouted;      REAL time: 7 secs 
+Phase  2  : 791 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 227 unrouted;      REAL time: 7 secs 
+Phase  3  : 208 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 227 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 208 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: project_r.ncd with current fully routed design.
 
@@ -130,7 +124,7 @@ Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8
 
 Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 Total REAL time to Router completion: 9 secs 
@@ -154,14 +148,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net vid | SETUP       |         N/A|     2.444ns|     N/A|           0
-  eoencoder/DataClock                       | HOLD        |     0.473ns|            |       0|           0
+  Autotimespec constraint for clock net vid | SETUP       |         N/A|     3.234ns|     N/A|           0
+  eoencoder/DataClock                       | HOLD        |     0.479ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    14.961ns|     N/A|           0
-  6x_BUFG                                   | HOLD        |     0.441ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.441ns|     N/A|           0
+  6x_BUFG                                   | HOLD        |     0.449ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net vid | SETUP       |         N/A|     3.523ns|     N/A|           0
-  eoencoder/clk35_BUFG                      | HOLD        |     0.496ns|            |       0|           0
+  Autotimespec constraint for clock net vid | SETUP       |         N/A|     4.418ns|     N/A|           0
+  eoencoder/clk35_BUFG                      | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -175,11 +169,11 @@ Derived Constraints for clk6x_BUFG
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|clk6x_BUFG                     |      9.902ns|     14.961ns|      6.030ns|            0|            0|        39444|            0|
-| videoencoder/clockgenerator/cl|     17.243ns|      4.000ns|          N/A|            0|            0|            0|            0|
+|clk6x_BUFG                     |      9.510ns|      7.441ns|     10.772ns|            0|            0|         9049|            0|
+| videoencoder/clockgenerator/cl|      9.270ns|      4.000ns|          N/A|            0|            0|            0|            0|
 | kdcm                          |             |             |             |             |             |             |             |
-| videoencoder/clk35            |      4.927ns|      3.000ns|          N/A|            0|            0|            0|            0|
-| videoencoder/notclk35         |      4.927ns|      3.000ns|          N/A|            0|            0|            0|            0|
+| videoencoder/notclk35         |      2.649ns|      3.000ns|          N/A|            0|            0|            0|            0|
+| videoencoder/clk35            |      2.649ns|      3.000ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.

@@ -2,7 +2,7 @@
 import os, sys
 import Image
 
-im = Image.open("/home/lexuil/Descargas/LVDS1/scriptimg2ram/image.jpg")
+im = Image.open("/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image3.jpg")
 
 tam= [100, 100]
 pix = im.load()
@@ -12,15 +12,18 @@ print "size: ", im.size
 
 print "Wait ... generating image"
 
-nfile = '/home/lexuil/Descargas/LVDS1/scriptimg2ram/image.mem'
+nfile = '/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image.mem'
 with open(nfile, 'wb') as f:
     for y in range(tam[1]): 
         for x in range(tam[0]): 
             try:
                 val = pix[x,y]
                 f.write(format(val[0], '02x'))
+                f.write('\n')
                 f.write(format(val[1], '02x'))
+                f.write('\n')
                 f.write(format(val[2], '02x'))
+                f.write('\n')
  
             except:
 								f.write('0000FF\n')

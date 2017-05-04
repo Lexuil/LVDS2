@@ -36,22 +36,22 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                          | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)         | Phase  |
 ------------+-----------------+------------+-----------------+------------+--------------------------+--------+
-channel1_n  |         6.191(R)|      SLOW  |         2.048(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.252(R)|      SLOW  |         2.125(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel1_p  |         6.191(R)|      SLOW  |         2.048(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.252(R)|      SLOW  |         2.125(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel2_n  |         6.184(R)|      SLOW  |         2.041(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.245(R)|      SLOW  |         2.118(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel2_p  |         6.184(R)|      SLOW  |         2.041(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.245(R)|      SLOW  |         2.118(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel3_n  |         6.188(R)|      SLOW  |         2.045(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.250(R)|      SLOW  |         2.123(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel3_p  |         6.188(R)|      SLOW  |         2.045(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.250(R)|      SLOW  |         2.123(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-clock_n     |         6.193(R)|      SLOW  |         2.050(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.254(R)|      SLOW  |         2.127(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-clock_p     |         6.193(R)|      SLOW  |         2.050(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
-            |         6.254(R)|      SLOW  |         2.127(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel1_n  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel1_p  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel2_n  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel2_p  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel3_n  |         6.250(R)|      SLOW  |         2.117(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.188(R)|      SLOW  |         2.051(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel3_p  |         6.250(R)|      SLOW  |         2.117(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.188(R)|      SLOW  |         2.051(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+clock_n     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+clock_p     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
 led         |         6.470(R)|      SLOW  |         2.315(R)|      FAST  |clk6x_BUFG                |   0.000|
 ------------+-----------------+------------+-----------------+------------+--------------------------+--------+
 
@@ -60,11 +60,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   14.961|         |         |         |
+clk            |    7.441|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Apr 27 17:22:28 2017 
+Analysis completed Wed May  3 17:45:56 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

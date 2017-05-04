@@ -5,25 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 56: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 63: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="new" >Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 50: Assignment to <arg fmt="%s" index="1">clkprueba</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1670" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 157: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; in initial block is partially initialized.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 43: Assignment to <arg fmt="%s" index="1">clkprueba</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 59: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 51: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 68: Assignment to <arg fmt="%s" index="1">clk_lckd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 75: Assignment to <arg fmt="%s" index="1">clk_lckd</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/lvds_clockgen.v" Line 57: Port <arg fmt="%s" index="1">PRE</arg> is not connected to this instance
@@ -35,22 +29,10 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/serializer.v" Line 83: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 125: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 122: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 138: Signal &lt;<arg fmt="%s" index="1">ContadorX</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 139: Signal &lt;<arg fmt="%s" index="1">ContadorX</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 140: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 141: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 142: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 141: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
 </msg>
 
 <msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">ram</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">LVDS_test</arg>&apos;, is tied to its initial value.
@@ -65,16 +47,16 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Blue&lt;7:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Green_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Green_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Red_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Red_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Green_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Green_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Blue_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
@@ -83,17 +65,9 @@
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Blue_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3213" delta="new" >HDL ADVISOR - Characteristics of the register &lt;<arg fmt="%s" index="1">Green</arg>&gt; prevent it from being combined with the RAM &lt;<arg fmt="%s" index="2">Mram_ram</arg>&gt; for implementation as read-only block RAM.
-</msg>
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-</msg>
-
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Red_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Red_2&gt; &lt;Red_3&gt; &lt;Red_4&gt; &lt;Red_6&gt; &lt;Red_7&gt; </arg>
-</msg>
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/buffer_0_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
@@ -113,6 +87,12 @@
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/buffer_0_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Red_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Red_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Green_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
 </msg>
 
@@ -123,771 +103,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Blue_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram194</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram197</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram195</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram196</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram198</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram199</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram200</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram201</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram202</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram203</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram204</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram205</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram206</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram207</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram208</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram209</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram210</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram211</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram214</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram212</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram213</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram215</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram216</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram217</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram218</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram219</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram220</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram223</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram221</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram222</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram224</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram225</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram226</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram227</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram228</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram229</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram232</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram230</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram231</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram233</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram234</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram235</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram236</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram237</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram238</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram239</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram240</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram241</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram242</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram243</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram244</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram245</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram246</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram249</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram247</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram248</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram250</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram251</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram252</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram253</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram254</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram255</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram256</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ram257</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram4</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram5</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram6</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram7</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram8</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram9</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram12</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram10</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram11</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram13</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram14</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram15</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram16</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram17</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram18</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram21</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram19</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram20</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram22</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram23</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram24</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram25</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram26</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram27</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram30</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram28</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram29</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram31</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram32</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram33</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram34</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram35</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram36</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram39</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram37</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram38</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram40</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram41</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram42</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram43</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram44</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram45</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram48</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram46</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram47</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram49</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram50</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram51</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram52</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram53</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram54</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram57</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram55</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram56</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram58</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram59</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram60</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram61</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram62</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram63</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram64</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram65</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram66</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram67</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram68</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram69</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram70</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram71</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram74</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram72</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram73</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram75</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram76</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram77</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram78</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram79</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram80</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram83</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram81</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram82</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram84</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram85</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram86</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram87</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram88</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram89</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram92</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram90</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram91</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram93</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram94</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram95</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram96</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram97</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram98</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram99</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram100</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram101</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram102</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram103</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram104</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram105</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram106</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram109</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram107</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram108</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram110</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram111</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram112</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram113</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram114</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram115</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram118</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram116</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram117</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram119</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram120</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram121</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram122</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram123</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram124</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram127</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram125</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram126</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram128</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram129</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram130</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram131</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram132</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram133</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram134</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram135</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram136</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram137</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram138</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram139</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram140</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram141</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram144</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram142</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram143</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram145</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram146</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram147</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram148</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram149</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram150</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram153</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram151</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram152</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram154</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram155</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram156</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram157</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram158</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram159</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram160</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram161</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram163</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram164</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram165</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram166</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram167</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram168</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram169</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram170</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram171</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram172</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram173</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram174</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram175</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram176</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram179</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram177</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram178</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram180</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram181</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram182</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram183</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram184</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram185</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram188</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram186</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram187</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram189</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram190</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram191</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram192</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram3</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram193</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram162</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ContadorY_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Contador_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -905,13 +120,7 @@
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/datacount</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/channel3_ser/datacount&gt; &lt;videoencoder/channel2_ser/datacount&gt; &lt;videoencoder/channel1_ser/datacount&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/channel1_ser/buffer_0_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/channel1_ser/buffer_0_5&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/buffer_0_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/clockgenerator/lvdsclkman/buffer_0_13&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/channel1_ser/buffer_0_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/channel1_ser/buffer_0_12&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/outcount_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/channel3_ser/outcount_0&gt; &lt;videoencoder/channel2_ser/outcount_0&gt; &lt;videoencoder/channel1_ser/outcount_0&gt; </arg>
@@ -927,9 +136,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/SendOK</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;videoencoder/channel3_ser/SendOK&gt; &lt;videoencoder/channel2_ser/SendOK&gt; &lt;videoencoder/channel1_ser/SendOK&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

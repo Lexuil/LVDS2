@@ -20,7 +20,14 @@ reg [7:0] Gimg;
 reg [7:0] Bimg;
 reg [30:0]  Contador=0;
 
-parameter ScreenX = 1365;
+reg [30:0]  Cont1=0;
+reg [30:0]  Cont2=1;
+reg [30:0]  Cont3=2;
+parameter Cont32 = 30'h752f;
+parameter Cont22 = 30'h752e;
+parameter Cont12 = 30'h752d;
+
+parameter ScreenX = 1366;
 parameter ScreenY = 768;
 
 parameter BlankingVertical = 12;
@@ -42,13 +49,13 @@ reg [10:0] ContadorY = ScreenY+BlankingVertical; // Contador de lineas
 
 assign clkprueba =clk6x;
 
-wire HSync =((ContadorX>ScreenX) & (ContadorX<(ScreenX+(BlankingHorizontal/2))))?0:1;
+wire HSync =(((ContadorX-1)==ScreenX) & ((ContadorX-1)==(ScreenX+(BlankingHorizontal/2))))?0:1;
 wire VSync =((ContadorY>ScreenY) & (ContadorY<(ScreenY+(BlankingVertical/2))))?0:1;
 wire DataEnable = ((ContadorX<ScreenX) & (ContadorY<ScreenY));
 
 always @(posedge clk6x) begin
 
-	ContadorX <= (ContadorX==(ScreenX+BlankingHorizontal)) ? 0 : ContadorX+1;
+	ContadorX <= ((ContadorX-1)==(ScreenX+BlankingHorizontal)) ? 0 : ContadorX+1;
 	if(ContadorX==(ScreenX+BlankingHorizontal)) ContadorY <= (ContadorY==(ScreenY+BlankingVertical)) ? 0 : ContadorY+1;
 
 end
@@ -90,65 +97,65 @@ video_lvds videoencoder (
     .clock_n(clock_n)
     );
 
-
-
-
 //Video Generator
 
 
-always @(posedge clk6x)
-
-begin
-	if (led) begin
-		if(ContadorX < ScreenX/8) begin            Blue <= 8'b00; Red 	<= 8'b0;  Green	<= 8'b0;
-		end else if(ContadorX < ScreenX/4)   begin Blue <= 8'hFF; Red 	<= 8'b0;  Green	<= 8'b0;
-		end else if(ContadorX < 3*ScreenX/8) begin Blue <= 8'b00; Red 	<= 8'HFF; Green	<= 8'b0;
-		end else if(ContadorX < ScreenX/2)   begin Blue	<= 8'hff; Red 	<= 8'hff; Green <= 8'b0;
-		end else if(ContadorX < 5*ScreenX/8) begin Blue <= 8'b0;  Red 	<= 8'b0;  Green <= 8'hff;
-		end else if(ContadorX < 3*ScreenX/4) begin Blue <= 8'hff; Red 	<= 8'b0;  Green <= 8'hff;
-		end else if(ContadorX < 7*ScreenX/8) begin Blue <= 8'b0;  Red 	<= 8'hff; Green <= 8'hff;
-		end else begin Blue <= 8'b11111111; Red <= 8'hff; Green <= 8'b11111111;
-		end 
+always @(posedge clk6x)begin
+	if(ContadorX > 682 & ContadorX < 684)begin
+		Red   <= 8'hFF;  
+		Green <= 8'hFF;
+		Blue  <= 8'hFF;
+	end else if(ContadorY > 383 & ContadorY < 385)begin
+		Red   <= 8'hFF;  
+		Green <= 8'hFF;
+		Blue  <= 8'hFF;
 	end else begin
 		Red   <= Rimg;  
 		Green <= Gimg;
-		Blue  <= Bimg; 
+		Blue  <= Bimg;
 	end
 end
 
-
-
 // test led
 
-always @(posedge clk6x)
-begin
+always @(posedge clk6x)begin
 	Contador <= Contador + 1;
-        if (Contador==36000000*2)
-	begin
+  if (Contador==36000000*2)begin
 		led <= ~led;
 		Contador <= 0;
-	
-        end
+  end
 end
+
 //RAM image
  
 parameter tm = (1<<12) -1;
 reg    [7:0] ram [0:tm];
-always @(clk6x) begin
-	if ((ContadorX+ (ScreenX*ContadorY))< 300520) begin
-		if((ContadorX < 101) & (ContadorY < 101)) begin
-			Gimg = ram[(ContadorX+ (ScreenX*ContadorY))+1];
-			Bimg = ram[(ContadorX+ (ScreenX*ContadorY))+2];
-			Rimg = ram[(ContadorX+ (ScreenX*ContadorY))+3];
+always @(posedge clk6x) begin
+	if((ContadorX < 100) & (ContadorY < 100)) begin
+		Rimg = ram[Cont1*3];
+		Gimg = ram[(Cont1*3)+1];
+		Bimg = ram[(Cont1*3)+2];
+		if (Cont1 == 9999) begin
+				Cont1 <= 0;
 		end else begin
-			Gimg = 8'h00;
-			Bimg = 8'h00;
-			Rimg = 8'hFF;
+			Cont1 <= Cont1 + 1;
 		end
+/*
+		if (Cont2 == Cont22) begin
+				Cont2 <= 1;
+		end else begin
+			Cont2 <= Cont2 + 3;
+		end
+		if (Cont3 == Cont32) begin
+				Cont3 <= 2;
+		end else begin
+			Cont3 <= Cont3 + 3;
+		end
+*/
 	end else begin
-		Rimg = 8'hFF;  
-		Gimg = 8'hFF;
-		Bimg = 8'hFF;
+		Rimg = 0;
+		Gimg = 0;
+		Bimg = 0;
 	end
 end
 
