@@ -5,19 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 63: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Port <arg fmt="%s" index="1">CLK180</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 50: Assignment to <arg fmt="%s" index="1">clkprueba</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 45: Assignment to <arg fmt="%s" index="1">clkprueba</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 53: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 59: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 54: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 75: Assignment to <arg fmt="%s" index="1">clk_lckd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 68: Assignment to <arg fmt="%s" index="1">clk_lckd</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/lvds_clockgen.v" Line 57: Port <arg fmt="%s" index="1">PRE</arg> is not connected to this instance
@@ -29,13 +29,28 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/serializer.v" Line 83: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 122: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 115: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 141: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 138: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">31</arg>-bit target.
 </msg>
 
-<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">ram</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">LVDS_test</arg>&apos;, is tied to its initial value.
+<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">ramR</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">LVDS_test</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">ramG</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">LVDS_test</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">ramB</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">LVDS_test</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="new" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">ramR</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="new" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">ramG</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="new" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">ramB</arg>&gt;, simulation mismatch.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Red&lt;7:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -65,9 +80,11 @@
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Blue_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ramR</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ramG</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ramB</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">videoencoder/clockgenerator/lvdsclkman/buffer_0_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
@@ -103,6 +120,15 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Blue_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LVDS_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ramB4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ramR4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_ramG4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MTP_</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Contador_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LVDS_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

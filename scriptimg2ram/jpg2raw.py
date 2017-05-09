@@ -2,9 +2,9 @@
 import os, sys
 import Image
 
-im = Image.open("/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image3.jpg")
+im = Image.open("/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image4.jpg")
 
-tam= [100, 100]
+tam= [90, 90]
 pix = im.load()
 print "size: ", im.size
 
@@ -12,21 +12,44 @@ print "size: ", im.size
 
 print "Wait ... generating image"
 
-nfile = '/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image.mem'
-with open(nfile, 'wb') as f:
+nfileR = '/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/imageR.mem'
+nfileG = '/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/imageG.mem'
+nfileB = '/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/imageB.mem'
+with open(nfileR, 'wb') as f:
     for y in range(tam[1]): 
         for x in range(tam[0]): 
             try:
                 val = pix[x,y]
-                f.write(format(val[0], '02x'))
-                f.write('\n')
-                f.write(format(val[1], '02x'))
-                f.write('\n')
-                f.write(format(val[2], '02x'))
+                f.write(format((val[0]*63)/255, '02x'))
                 f.write('\n')
  
             except:
 								f.write('0000FF\n')
 								print "error", y,x
 
-print 'generated -> ', nfile
+with open(nfileG, 'wb') as f:
+    for y in range(tam[1]): 
+        for x in range(tam[0]): 
+            try:
+                val = pix[x,y]
+                f.write(format((val[1]*63)/255, '02x'))
+                f.write('\n')
+ 
+            except:
+								f.write('0000FF\n')
+								print "error", y,x
+
+with open(nfileB, 'wb') as f:
+    for y in range(tam[1]): 
+        for x in range(tam[0]): 
+            try:
+                val = pix[x,y]
+                f.write(format((val[2]*63)/255, '02x'))
+                f.write('\n')
+ 
+            except:
+								f.write('0000FF\n')
+								print "error", y,x
+
+
+print 'generated -> ', nfileR

@@ -99,4 +99,5 @@ iversim:  build/project.src
 	gtkwave simulation/$(DESIGN)_TB.vcd&
 
 upload:
+	scp $(DESIGN).bit pi@192.168.43.211:Documents/Codigos
 	xc3sprog -c ftdi -v -p1 $(DESIGN).bit

@@ -66,16 +66,18 @@ Parsing module <dvi_decoder>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 63: Port CLK180 is not connected to this instance
+WARNING:HDLCompiler:1016 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Port CLK180 is not connected to this instance
 
 Elaborating module <LVDS_test>.
-Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/image.mem\".
-WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 50: Assignment to clkprueba ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Result of 32-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 59: Result of 32-bit expression is truncated to fit in 11-bit target.
+Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageR.mem\".
+Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageG.mem\".
+Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageB.mem\".
+WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 45: Assignment to clkprueba ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 53: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 54: Result of 32-bit expression is truncated to fit in 11-bit target.
 
-Elaborating module <DCM_SP(CLKIN_PERIOD=20,CLKFX_MULTIPLY=7,CLKFX_DIVIDE=5)>.
-WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 75: Assignment to clk_lckd ignored, since the identifier is never used
+Elaborating module <DCM_SP(CLKIN_PERIOD=20,CLKFX_DIVIDE=5)>.
+WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 68: Assignment to clk_lckd ignored, since the identifier is never used
 
 Elaborating module <BUFG>.
 
@@ -95,8 +97,8 @@ Elaborating module <serializer>.
 Elaborating module <ODDR2(DDR_ALIGNMENT="NONE")>.
 WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/serializer.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/serializer.v" Line 83: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 122: Result of 32-bit expression is truncated to fit in 31-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 141: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 115: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 138: Result of 32-bit expression is truncated to fit in 31-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -104,15 +106,20 @@ WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" 
 
 Synthesizing Unit <LVDS_test>.
     Related source file is "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v".
-        Cont32 = 30'b000000000000000111010100101111
-        Cont22 = 30'b000000000000000111010100101110
-        Cont12 = 30'b000000000000000111010100101101
         ScreenX = 1366
         ScreenY = 768
         BlankingVertical = 12
         BlankingHorizontal = 50
-        tm = 4095
-WARNING:Xst:2999 - Signal 'ram', unconnected in block 'LVDS_test', is tied to its initial value.
+        tm = 8191
+WARNING:Xst:2999 - Signal 'ramR', unconnected in block 'LVDS_test', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'ramG', unconnected in block 'LVDS_test', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'ramB', unconnected in block 'LVDS_test', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramR>, simulation mismatch.
+    Found 8100x8-bit single-port Read Only RAM <Mram_ramR> for signal <ramR>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramG>, simulation mismatch.
+    Found 8100x8-bit single-port Read Only RAM <Mram_ramG> for signal <ramG>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramB>, simulation mismatch.
+    Found 8100x8-bit single-port Read Only RAM <Mram_ramB> for signal <ramB>.
     Found 11-bit register for signal <ContadorY>.
     Found 8-bit register for signal <Red>.
     Found 8-bit register for signal <Green>.
@@ -124,29 +131,24 @@ WARNING:Xst:2999 - Signal 'ram', unconnected in block 'LVDS_test', is tied to it
     Found 8-bit register for signal <Bimg>.
     Found 31-bit register for signal <Cont1>.
     Found 11-bit register for signal <ContadorX>.
-    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_1_OUT> created at line 52.
-    Found 12-bit adder for signal <n0113[11:0]> created at line 58.
-    Found 12-bit adder for signal <n0115[11:0]> created at line 59.
-    Found 31-bit adder for signal <Contador[30]_GND_1_o_add_37_OUT> created at line 122.
-    Found 32-bit adder for signal <n0090> created at line 136.
-    Found 32-bit adder for signal <n0092> created at line 137.
-    Found 31-bit adder for signal <Cont1[30]_GND_1_o_add_53_OUT> created at line 141.
-    Found 31x2-bit multiplier for signal <n0088> created at line 135.
-    Found 4096x8-bit dual-port Read Only RAM <Mram_ram> for signal <ram>.
-    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_6_o> created at line 53
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_7_o> created at line 53
-    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_9_o> created at line 54
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_10_o> created at line 54
-    Found 11-bit comparator greater for signal <GND_1_o_ContadorX[10]_LessThan_24_o> created at line 104
-    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_25_o> created at line 104
-    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_26_o> created at line 108
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_27_o> created at line 108
-    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_43_o> created at line 134
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_44_o> created at line 134
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_1_OUT> created at line 47.
+    Found 12-bit adder for signal <n0107[11:0]> created at line 53.
+    Found 12-bit adder for signal <n0109[11:0]> created at line 54.
+    Found 31-bit adder for signal <Contador[30]_GND_1_o_add_37_OUT> created at line 115.
+    Found 31-bit adder for signal <Cont1[30]_GND_1_o_add_48_OUT> created at line 138.
+    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_6_o> created at line 48
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_7_o> created at line 48
+    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_9_o> created at line 49
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_10_o> created at line 49
+    Found 11-bit comparator greater for signal <GND_1_o_ContadorX[10]_LessThan_24_o> created at line 97
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_25_o> created at line 97
+    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_26_o> created at line 101
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_27_o> created at line 101
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_43_o> created at line 131
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_44_o> created at line 131
     Summary:
-	inferred   2 RAM(s).
-	inferred   1 Multiplier(s).
-	inferred   7 Adder/Subtractor(s).
+	inferred   3 RAM(s).
+	inferred   5 Adder/Subtractor(s).
 	inferred 133 D-type flip-flop(s).
 	inferred  10 Comparator(s).
 	inferred   4 Multiplexer(s).
@@ -187,18 +189,14 @@ Unit <serializer> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4096x8-bit dual-port Read Only RAM                    : 1
- 4096x8-bit single-port Read Only RAM                  : 1
-# Multipliers                                          : 1
- 31x2-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 15
+# RAMs                                                 : 3
+ 8100x8-bit single-port Read Only RAM                  : 3
+# Adders/Subtractors                                   : 13
  1-bit adder                                           : 4
  12-bit adder                                          : 2
  12-bit subtractor                                     : 1
  3-bit adder                                           : 4
  31-bit adder                                          : 2
- 32-bit adder                                          : 2
 # Registers                                            : 35
  1-bit register                                        : 13
  11-bit register                                       : 2
@@ -233,16 +231,16 @@ Synthesizing (advanced) Unit <LVDS_test>.
 The following registers are absorbed into counter <Contador>: 1 register on signal <Contador>.
 The following registers are absorbed into counter <Cont1>: 1 register on signal <Cont1>.
 The following registers are absorbed into counter <ContadorX>: 1 register on signal <ContadorX>.
-INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <Rimg> <Gimg>
+INFO:Xst:3226 - The RAM <Mram_ramR> will be implemented as a BLOCK RAM, absorbing the following register(s): <Rimg>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     aspect ratio   | 8100-word x 8-bit                   |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk6x>         | rise     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <n0088>         |          |
+    |     addrA          | connected to signal <Cont1<12:0>>   |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Rimg>          |          |
     |     dorstA         | connected to internal node          | low      |
@@ -250,27 +248,33 @@ INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing
     -----------------------------------------------------------------------
     | optimization       | area                                |          |
     -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 4096-word x 8-bit                   |          |
-    |     mode           | write-first                         |          |
-    |     clkB           | connected to signal <clk6x>         | rise     |
-    |     addrB          | connected to signal <n0090>         |          |
-    |     doB            | connected to signal <Gimg>          |          |
-    |     dorstB         | connected to internal node          | low      |
-    | reset value        | 00000000                                       |
-    -----------------------------------------------------------------------
-    | optimization       | area                                |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3226 - The RAM <Mram_ram1> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bimg>
+INFO:Xst:3226 - The RAM <Mram_ramG> will be implemented as a BLOCK RAM, absorbing the following register(s): <Gimg>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     aspect ratio   | 8100-word x 8-bit                   |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk6x>         | rise     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <n0092>         |          |
+    |     addrA          | connected to signal <Cont1<12:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Gimg>          |          |
+    |     dorstA         | connected to internal node          | low      |
+    | reset value        | 00000000                                       |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_ramB> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bimg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8100-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk6x>         | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Cont1<12:0>>   |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Bimg>          |          |
     |     dorstA         | connected to internal node          | low      |
@@ -289,13 +293,10 @@ Unit <serializer> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4096x8-bit dual-port block Read Only RAM              : 1
- 4096x8-bit single-port block Read Only RAM            : 1
-# Multipliers                                          : 1
- 31x2-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 4
- 12-bit adder                                          : 3
+# RAMs                                                 : 3
+ 8100x8-bit single-port block Read Only RAM            : 3
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
  12-bit subtractor                                     : 1
 # Counters                                             : 11
  1-bit up counter                                      : 4
@@ -335,6 +336,9 @@ WARNING:Xst:2677 - Node <Green_6> of sequential type is unconnected in block <LV
 WARNING:Xst:2677 - Node <Green_7> of sequential type is unconnected in block <LVDS_test>.
 WARNING:Xst:2677 - Node <Blue_6> of sequential type is unconnected in block <LVDS_test>.
 WARNING:Xst:2677 - Node <Blue_7> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Mram_ramB4> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ramR4> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <Mram_ramG4> of sequential type is unconnected in block <MTP_>.
 WARNING:Xst:1293 - FF/Latch <Contador_27> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Contador_28> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Contador_29> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
@@ -349,7 +353,7 @@ INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/DataInBuffe
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/SendOK> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/SendOK> <videoencoder/channel2_ser/SendOK> <videoencoder/channel1_ser/SendOK> 
-Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 14.
+Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 12.
 FlipFlop led has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
@@ -382,19 +386,19 @@ Top Level Output File Name         : project.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 518
+# BELS                             : 419
 #      GND                         : 1
-#      INV                         : 19
-#      LUT1                        : 98
-#      LUT2                        : 44
-#      LUT3                        : 60
+#      INV                         : 17
+#      LUT1                        : 77
+#      LUT2                        : 33
+#      LUT3                        : 59
 #      LUT4                        : 2
-#      LUT5                        : 8
-#      LUT6                        : 35
-#      MUXCY                       : 118
+#      LUT5                        : 11
+#      LUT6                        : 33
+#      MUXCY                       : 87
 #      MUXF7                       : 6
 #      VCC                         : 1
-#      XORCY                       : 126
+#      XORCY                       : 92
 # FlipFlops/Latches                : 168
 #      FD                          : 20
 #      FDC                         : 55
@@ -404,8 +408,8 @@ Primitive and Black Box Usage:
 #      FDRE                        : 31
 #      FDS                         : 6
 #      ODDR2                       : 4
-# RAMS                             : 4
-#      RAMB16BWER                  : 4
+# RAMS                             : 9
+#      RAMB16BWER                  : 9
 # Clock Buffers                    : 5
 #      BUFG                        : 5
 # IO Buffers                       : 6
@@ -423,14 +427,14 @@ Selected Device : 6slx4tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             167  out of   4800     3%  
- Number of Slice LUTs:                  266  out of   2400    11%  
-    Number used as Logic:               266  out of   2400    11%  
+ Number of Slice LUTs:                  232  out of   2400     9%  
+    Number used as Logic:               232  out of   2400     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    272
-   Number with an unused Flip Flop:     105  out of    272    38%  
-   Number with an unused LUT:             6  out of    272     2%  
-   Number of fully used LUT-FF pairs:   161  out of    272    59%  
+ Number of LUT Flip Flop pairs used:    238
+   Number with an unused Flip Flop:      71  out of    238    29%  
+   Number with an unused LUT:             6  out of    238     2%  
+   Number of fully used LUT-FF pairs:   161  out of    238    67%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -439,8 +443,8 @@ IO Utilization:
     IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                4  out of     12    33%  
-    Number using Block RAM only:          4
+ Number of Block RAM/FIFO:                9  out of     12    75%  
+    Number using Block RAM only:          9
  Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
 
 ---------------------------
@@ -464,7 +468,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 156   |
+clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 161   |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX   | 16    |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX180| 4     |
 -----------------------------------+-----------------------------+-------+
@@ -477,7 +481,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 16.606ns (Maximum Frequency: 60.219MHz)
+   Minimum period: 9.489ns (Maximum Frequency: 105.383MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: No path found
@@ -488,14 +492,14 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 16.606ns (frequency: 60.219MHz)
-  Total number of paths / destination ports: 9437 / 431
+  Clock period: 9.489ns (frequency: 105.383MHz)
+  Total number of paths / destination ports: 6180 / 479
 -------------------------------------------------------------------------
 Delay:               3.389ns (Levels of Logic = 1)
   Source:            videoencoder/clockgenerator/lvdsclkman/outcount_0 (FF)
   Destination:       videoencoder/clockgenerator/lvdsclkman/shiftdata_1 (FF)
-  Source Clock:      clk rising 4.9X
-  Destination Clock: clk rising 4.9X
+  Source Clock:      clk rising 2.8X
+  Destination Clock: clk rising 2.8X
 
   Data Path: videoencoder/clockgenerator/lvdsclkman/outcount_0 to videoencoder/clockgenerator/lvdsclkman/shiftdata_1
                                 Gate     Net
@@ -515,7 +519,7 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
 Offset:              4.118ns (Levels of Logic = 1)
   Source:            led_1 (FF)
   Destination:       led (PAD)
-  Source Clock:      clk rising 1.4X
+  Source Clock:      clk rising 0.8X
 
   Data Path: led_1 to led
                                 Gate     Net
@@ -537,21 +541,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.326|         |         |         |
+clk            |    7.469|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.84 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.57 secs
  
 --> 
 
 
-Total memory usage is 387668 kilobytes
+Total memory usage is 389100 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   36 (   0 filtered)
-Number of infos    :    9 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 

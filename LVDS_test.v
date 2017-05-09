@@ -21,11 +21,6 @@ reg [7:0] Bimg;
 reg [30:0]  Contador=0;
 
 reg [30:0]  Cont1=0;
-reg [30:0]  Cont2=1;
-reg [30:0]  Cont3=2;
-parameter Cont32 = 30'h752f;
-parameter Cont22 = 30'h752e;
-parameter Cont12 = 30'h752d;
 
 parameter ScreenX = 1366;
 parameter ScreenY = 768;
@@ -61,9 +56,7 @@ always @(posedge clk6x) begin
 end
 
 DCM_SP #(
-//	.CLKIN_PERIOD	(63), // 64MHz Clock from 16MHz Input
-	.CLKIN_PERIOD	(20),  // from 12MHz Input
-	.CLKFX_MULTIPLY	(7),   // 72 MHz Clock
+	.CLKIN_PERIOD	(20),  // from 50MHz Input (valor del periodo en ns)
 	.CLKFX_DIVIDE 	(5)
 	)
 dcm_main (
@@ -128,7 +121,23 @@ end
 
 //RAM image
  
-parameter tm = (1<<12) -1;
+parameter tm = (1<<13) -1;
+
+reg    [7:0] ramR [0:8099];
+reg    [7:0] ramG [0:8099];
+reg    [7:0] ramB [0:8099];
+
+always @(posedge clk6x) begin
+	if((ContadorX < 90) & (ContadorY < 90)) begin
+		Rimg = ramR[Cont1];
+		Gimg = ramG[Cont1];
+		Bimg = ramB[Cont1];
+		if (Cont1 == 8099) begin
+				Cont1 <= 0;
+		end else begin
+			Cont1 <= Cont1 + 1;
+		end
+/*
 reg    [7:0] ram [0:tm];
 always @(posedge clk6x) begin
 	if((ContadorX < 100) & (ContadorY < 100)) begin
@@ -140,17 +149,6 @@ always @(posedge clk6x) begin
 		end else begin
 			Cont1 <= Cont1 + 1;
 		end
-/*
-		if (Cont2 == Cont22) begin
-				Cont2 <= 1;
-		end else begin
-			Cont2 <= Cont2 + 3;
-		end
-		if (Cont3 == Cont32) begin
-				Cont3 <= 2;
-		end else begin
-			Cont3 <= Cont3 + 3;
-		end
 */
 	end else begin
 		Rimg = 0;
@@ -161,7 +159,12 @@ end
 
 initial 
 begin
+/*
 	$readmemh("/scriptimg2ram/image.mem", ram);
+*/
+	$readmemh("/scriptimg2ram/imageR.mem", ramR);
+	$readmemh("/scriptimg2ram/imageG.mem", ramG);
+	$readmemh("/scriptimg2ram/imageB.mem", ramB);
 end
 
 endmodule
