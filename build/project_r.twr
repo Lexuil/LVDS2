@@ -40,9 +40,9 @@ channel1_n  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |video
             |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
 channel1_p  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
             |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel2_n  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+channel2_n  |         6.246(R)|      SLOW  |         2.113(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
             |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-channel2_p  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+channel2_p  |         6.246(R)|      SLOW  |         2.113(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
             |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
 channel3_n  |         6.250(R)|      SLOW  |         2.117(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
             |         6.188(R)|      SLOW  |         2.051(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
@@ -60,18 +60,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.270|         |         |         |
+clk            |   15.808|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue May  9 15:32:15 2017 
+Analysis completed Wed May 10 14:30:18 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 380 MB
+Peak Memory Usage: 397 MB
 
 
 

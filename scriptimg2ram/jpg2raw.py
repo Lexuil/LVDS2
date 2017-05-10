@@ -2,9 +2,9 @@
 import os, sys
 import Image
 
-im = Image.open("/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image4.jpg")
+im = Image.open("/media/lexuil/Ubuntu Data/Codigos/LVDS2/scriptimg2ram/image6.jpg")
 
-tam= [90, 90]
+tam= [100, 100]
 pix = im.load()
 print "size: ", im.size
 

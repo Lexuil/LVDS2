@@ -18,7 +18,7 @@ SRC 		=	$(DESIGN).v serializer.v\
 			lvds_clockgen.v \
 			video_lvds.v  \
 			ram.v \
-			dvi_decoder.v 		
+			dvi_decoder.v 
 
 SIM_SRC = $(DESIGN)_TB.v          \
 
@@ -100,4 +100,3 @@ iversim:  build/project.src
 
 upload:
 	scp $(DESIGN).bit pi@192.168.43.211:Documents/Codigos
-	xc3sprog -c ftdi -v -p1 $(DESIGN).bit

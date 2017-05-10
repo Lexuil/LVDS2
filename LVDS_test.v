@@ -15,12 +15,13 @@ module LVDS_test(
     );
 
 
-reg [7:0] Rimg;
-reg [7:0] Gimg;
-reg [7:0] Bimg;
+wire [7:0] Rimg;
+wire [7:0] Gimg;
+wire [7:0] Bimg;
 reg [30:0]  Contador=0;
 
 reg [30:0]  Cont1=0;
+reg [1:0]  en=0;
 
 parameter ScreenX = 1366;
 parameter ScreenY = 768;
@@ -92,6 +93,14 @@ video_lvds videoencoder (
 
 //Video Generator
 
+ram image(
+	.d_outR(Rimg),
+	.d_outG(Gimg),
+	.d_outB(Bimg),
+	.clkq(clk6x),
+	.addrX(Cont1),
+	.en(en)
+);
 
 always @(posedge clk6x)begin
 	if(ContadorX > 682 & ContadorX < 684)begin
@@ -102,10 +111,14 @@ always @(posedge clk6x)begin
 		Red   <= 8'hFF;  
 		Green <= 8'hFF;
 		Blue  <= 8'hFF;
-	end else begin
+	end else if(en == 1)begin
 		Red   <= Rimg;  
 		Green <= Gimg;
 		Blue  <= Bimg;
+	end else begin
+		Red   <= 0;  
+		Green <= 0;
+		Blue  <= 0;
 	end
 end
 
@@ -117,27 +130,39 @@ always @(posedge clk6x)begin
 		led <= ~led;
 		Contador <= 0;
   end
-end
-
-//RAM image
- 
-parameter tm = (1<<13) -1;
-
-reg    [7:0] ramR [0:8099];
-reg    [7:0] ramG [0:8099];
-reg    [7:0] ramB [0:8099];
-
-always @(posedge clk6x) begin
-	if((ContadorX < 90) & (ContadorY < 90)) begin
-		Rimg = ramR[Cont1];
-		Gimg = ramG[Cont1];
-		Bimg = ramB[Cont1];
-		if (Cont1 == 8099) begin
+	if((ContadorX < 100) & (ContadorY < 100)) begin
+		en = 1;
+		if (Cont1 == 9999) begin
 				Cont1 <= 0;
 		end else begin
 			Cont1 <= Cont1 + 1;
 		end
-/*
+	end else begin
+		en = 0;
+	end
+end
+
+//RAM image
+
+
+/* 
+parameter tm = (1<<13) -1;
+
+reg    [7:0] ramR [0:39999];
+reg    [7:0] ramG [0:39999];
+reg    [7:0] ramB [0:39999];
+
+always @(posedge clk6x) begin
+	if((ContadorX < 200) & (ContadorY < 200)) begin
+		Rimg = ramR[Cont1];
+		Gimg = ramG[Cont1];
+		Bimg = ramB[Cont1];
+		if (Cont1 == 39999) begin
+				Cont1 <= 0;
+		end else begin
+			Cont1 <= Cont1 + 1;
+		end
+
 reg    [7:0] ram [0:tm];
 always @(posedge clk6x) begin
 	if((ContadorX < 100) & (ContadorY < 100)) begin
@@ -149,7 +174,7 @@ always @(posedge clk6x) begin
 		end else begin
 			Cont1 <= Cont1 + 1;
 		end
-*/
+
 	end else begin
 		Rimg = 0;
 		Gimg = 0;
@@ -159,14 +184,12 @@ end
 
 initial 
 begin
-/*
 	$readmemh("/scriptimg2ram/image.mem", ram);
-*/
 	$readmemh("/scriptimg2ram/imageR.mem", ramR);
 	$readmemh("/scriptimg2ram/imageG.mem", ramG);
 	$readmemh("/scriptimg2ram/imageB.mem", ramB);
 end
-
+*/
 endmodule
 
 
