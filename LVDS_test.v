@@ -58,6 +58,7 @@ end
 
 DCM_SP #(
 	.CLKIN_PERIOD	(20),  // from 50MHz Input (valor del periodo en ns)
+	.CLKFX_MULTIPLY(7),
 	.CLKFX_DIVIDE 	(5)
 	)
 dcm_main (
@@ -130,9 +131,9 @@ always @(posedge clk6x)begin
 		led <= ~led;
 		Contador <= 0;
   end
-	if((ContadorX < 100) & (ContadorY < 100)) begin
+	if((ContadorX < 200) & (ContadorY < 200)) begin
 		en = 1;
-		if (Cont1 == 9999) begin
+		if (Cont1 == 39999) begin
 				Cont1 <= 0;
 		end else begin
 			Cont1 <= Cont1 + 1;

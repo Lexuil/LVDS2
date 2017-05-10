@@ -7,9 +7,9 @@ module ram(
 	input [1:0]en
 );
 
-reg    [5:0] ramR [0:9999];
-reg    [5:0] ramG [0:9999];
-reg    [5:0] ramB [0:9999]; 
+reg    [5:0] ramR [0:39999];
+reg    [5:0] ramG [0:39999];
+reg    [5:0] ramB [0:39999]; 
 
 always @(posedge clkq) begin
 	if(en) begin

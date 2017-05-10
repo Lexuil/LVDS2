@@ -180,16 +180,15 @@ Unit <serializer> synthesized.
 
 Synthesizing Unit <ram>.
     Related source file is "/media/lexuil/Ubuntu Data/Codigos/LVDS2/ram.v".
-WARNING:Xst:647 - Input <addrX<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2999 - Signal 'ramR', unconnected in block 'ram', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'ramG', unconnected in block 'ram', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'ramB', unconnected in block 'ram', is tied to its initial value.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramR>, simulation mismatch.
-    Found 10000x6-bit single-port Read Only RAM <Mram_ramR> for signal <ramR>.
+    Found 40000x6-bit single-port Read Only RAM <Mram_ramR> for signal <ramR>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramG>, simulation mismatch.
-    Found 10000x6-bit single-port Read Only RAM <Mram_ramG> for signal <ramG>.
+    Found 40000x6-bit single-port Read Only RAM <Mram_ramG> for signal <ramG>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <ramB>, simulation mismatch.
-    Found 10000x6-bit single-port Read Only RAM <Mram_ramB> for signal <ramB>.
+    Found 40000x6-bit single-port Read Only RAM <Mram_ramB> for signal <ramB>.
     Found 6-bit register for signal <d_outG>.
     Found 6-bit register for signal <d_outB>.
     Found 6-bit register for signal <d_outR>.
@@ -203,7 +202,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 3
- 10000x6-bit single-port Read Only RAM                 : 3
+ 40000x6-bit single-port Read Only RAM                 : 3
 # Adders/Subtractors                                   : 13
  1-bit adder                                           : 4
  12-bit adder                                          : 2
@@ -249,44 +248,34 @@ The following registers are absorbed into counter <ContadorX>: 1 register on sig
 Unit <LVDS_test> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ram>.
-INFO:Xst:3226 - The RAM <Mram_ramG> will be implemented as a BLOCK RAM, absorbing the following register(s): <d_outG>
+INFO:Xst:3230 - The RAM description <Mram_ramG> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
     -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
+    | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 10000-word x 6-bit                  |          |
-    |     mode           | write-first                         |          |
-    |     clkA           | connected to signal <clkq>          | rise     |
-    |     enA            | connected to internal node          | high     |
+    |     aspect ratio   | 40000-word x 6-bit                  |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <addrX>         |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <d_outG>        |          |
+    |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-    | optimization       | area                                |          |
+INFO:Xst:3230 - The RAM description <Mram_ramR> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
     -----------------------------------------------------------------------
-INFO:Xst:3226 - The RAM <Mram_ramR> will be implemented as a BLOCK RAM, absorbing the following register(s): <d_outR>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
+    | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 10000-word x 6-bit                  |          |
-    |     mode           | write-first                         |          |
-    |     clkA           | connected to signal <clkq>          | rise     |
-    |     enA            | connected to internal node          | high     |
+    |     aspect ratio   | 40000-word x 6-bit                  |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <addrX>         |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <d_outR>        |          |
-    -----------------------------------------------------------------------
-    | optimization       | area                                |          |
+    |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 INFO:Xst:3230 - The RAM description <Mram_ramB> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 10000-word x 6-bit                  |          |
+    |     aspect ratio   | 40000-word x 6-bit                  |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <addrX>         |          |
     |     diA            | connected to signal <GND>           |          |
@@ -304,8 +293,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 3
- 10000x6-bit single-port block Read Only RAM           : 2
- 10000x6-bit single-port distributed Read Only RAM     : 1
+ 40000x6-bit single-port distributed Read Only RAM     : 3
 # Adders/Subtractors                                   : 2
  12-bit adder                                          : 1
  12-bit subtractor                                     : 1
@@ -314,8 +302,8 @@ Macro Statistics
  11-bit up counter                                     : 1
  3-bit up counter                                      : 4
  31-bit up counter                                     : 2
-# Registers                                            : 117
- Flip-Flops                                            : 117
+# Registers                                            : 129
+ Flip-Flops                                            : 129
 # Comparators                                          : 10
  11-bit comparator greater                             : 10
 # Multiplexers                                         : 100
@@ -330,6 +318,9 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <en_1> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_outB_3> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_outB_4> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_outB_5> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <Red_6> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <Red_7> <Blue_6> <Blue_7> 
 INFO:Xst:2261 - The FF/Latch <Green_6> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <Green_7> 
 
@@ -338,6 +329,8 @@ Optimizing unit <LVDS_test> ...
 Optimizing unit <video_lvds> ...
 
 Optimizing unit <serializer> ...
+
+Optimizing unit <ram> ...
 WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_11> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_10> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_9> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
@@ -351,6 +344,9 @@ WARNING:Xst:1293 - FF/Latch <Contador_28> has a constant value of 0 in block <LV
 WARNING:Xst:1293 - FF/Latch <Contador_29> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Contador_30> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/datacount> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/datacount> <videoencoder/channel2_ser/datacount> <videoencoder/channel1_ser/datacount> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/channel3_ser/buffer_0_3> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <videoencoder/channel3_ser/buffer_0_5> 
+INFO:Xst:2261 - The FF/Latch <Blue_3> in Unit <LVDS_test> is equivalent to the following 2 FFs/Latches, which will be removed : <Blue_4> <Blue_5> 
+INFO:Xst:2261 - The FF/Latch <videoencoder/channel3_ser/buffer_0_10> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <videoencoder/channel3_ser/buffer_0_12> 
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_8> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <videoencoder/clockgenerator/lvdsclkman/buffer_0_13> 
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_0> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_0> <videoencoder/channel2_ser/outcount_0> <videoencoder/channel1_ser/outcount_0> 
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_1> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_1> <videoencoder/channel2_ser/outcount_1> <videoencoder/channel1_ser/outcount_1> 
@@ -360,7 +356,9 @@ INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/DataInBuffe
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/SendOK> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/SendOK> <videoencoder/channel2_ser/SendOK> <videoencoder/channel1_ser/SendOK> 
-Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 74.
+Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 426.
+Optimizing block <LVDS_test> to meet ratio 100 (+ 0) of 600 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <LVDS_test>, final ratio is 385.
 FlipFlop led has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
@@ -369,8 +367,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 171
- Flip-Flops                                            : 171
+# Registers                                            : 176
+ Flip-Flops                                            : 176
 
 =========================================================================
 
@@ -393,31 +391,28 @@ Top Level Output File Name         : project.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1981
+# BELS                             : 12251
 #      GND                         : 1
-#      INV                         : 21
-#      LUT1                        : 77
-#      LUT2                        : 49
-#      LUT3                        : 117
-#      LUT4                        : 82
-#      LUT5                        : 202
-#      LUT6                        : 1078
+#      INV                         : 24
+#      LUT1                        : 80
+#      LUT2                        : 318
+#      LUT3                        : 613
+#      LUT4                        : 957
+#      LUT5                        : 2038
+#      LUT6                        : 7388
 #      MUXCY                       : 87
-#      MUXF7                       : 142
-#      MUXF8                       : 32
+#      MUXF7                       : 652
 #      VCC                         : 1
 #      XORCY                       : 92
-# FlipFlops/Latches                : 175
+# FlipFlops/Latches                : 180
 #      FD                          : 6
-#      FDC                         : 54
+#      FDC                         : 52
 #      FDCE                        : 9
-#      FDE                         : 19
-#      FDR                         : 46
+#      FDE                         : 28
+#      FDR                         : 44
 #      FDRE                        : 31
 #      FDS                         : 6
 #      ODDR2                       : 4
-# RAMS                             : 12
-#      RAMB16BWER                  : 12
 # Clock Buffers                    : 5
 #      BUFG                        : 5
 # IO Buffers                       : 6
@@ -434,15 +429,15 @@ Selected Device : 6slx4tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             174  out of   4800     3%  
- Number of Slice LUTs:                 1626  out of   2400    67%  
-    Number used as Logic:              1626  out of   2400    67%  
+ Number of Slice Registers:             179  out of   4800     3%  
+ Number of Slice LUTs:                11418  out of   2400   475% (*) 
+    Number used as Logic:             11418  out of   2400   475% (*) 
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1634
-   Number with an unused Flip Flop:    1460  out of   1634    89%  
-   Number with an unused LUT:             8  out of   1634     0%  
-   Number of fully used LUT-FF pairs:   166  out of   1634    10%  
+ Number of LUT Flip Flop pairs used:  11426
+   Number with an unused Flip Flop:   11247  out of  11426    98%  
+   Number with an unused LUT:             8  out of  11426     0%  
+   Number of fully used LUT-FF pairs:   171  out of  11426     1%  
    Number of unique control sets:        15
 
 IO Utilization: 
@@ -451,9 +446,9 @@ IO Utilization:
     IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               12  out of     12   100%  
-    Number using Block RAM only:         12
  Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -476,7 +471,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 171   |
+clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 164   |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX   | 16    |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX180| 4     |
 -----------------------------------+-----------------------------+-------+
@@ -489,7 +484,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 13.169ns (Maximum Frequency: 75.935MHz)
+   Minimum period: 19.251ns (Maximum Frequency: 51.945MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: No path found
@@ -500,38 +495,45 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.169ns (frequency: 75.935MHz)
-  Total number of paths / destination ports: 33135 / 560
+  Clock period: 19.251ns (frequency: 51.945MHz)
+  Total number of paths / destination ports: 535820 / 390
 -------------------------------------------------------------------------
-Delay:               16.461ns (Levels of Logic = 14)
-  Source:            Cont1_7 (FF)
-  Destination:       image/d_outB_4 (FF)
+Delay:               24.064ns (Levels of Logic = 21)
+  Source:            Cont1_6 (FF)
+  Destination:       image/d_outB_0 (FF)
   Source Clock:      clk rising 0.8X
   Destination Clock: clk rising 0.8X
 
-  Data Path: Cont1_7 to image/d_outB_4
+  Data Path: Cont1_6 to image/d_outB_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q           519   0.525   2.891  Cont1_7 (Cont1_7)
-     LUT5:I0->O            1   0.254   0.682  image_Mram_ramB670126 (image_Mram_ramB670125)
-     LUT6:I5->O            1   0.254   0.790  image_Mram_ramB670127 (image_Mram_ramB670126)
-     LUT6:I4->O           13   0.250   1.098  image_Mram_ramB670128 (image_Mram_ramB67011)
-     LUT4:I3->O            1   0.254   1.137  image_SF111338 (image_SF111338)
-     LUT6:I0->O            1   0.254   0.000  image_SF111341_F (image_N524)
-     MUXF7:I0->O           1   0.163   0.682  image_SF111341 (image_SF111341)
-     LUT6:I5->O            1   0.254   0.682  image_SF111342 (image_SF111342)
-     LUT5:I4->O            1   0.254   0.682  image_SF111343 (image_SF111343)
-     LUT6:I5->O            3   0.254   0.766  image_SF111344 (image_SF111344)
-     LUT3:I2->O            5   0.254   0.841  image_SF1113108 (image_SF1113)
-     LUT6:I5->O            1   0.254   0.790  image_Mram_ramB67011994 (image_Mram_ramB67011995)
-     LUT6:I4->O            1   0.250   0.682  image_Mram_ramB670119102 (image_Mram_ramB670119103)
-     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB670119110 (image_Mram_ramB670119111)
-     LUT6:I5->O            1   0.254   0.000  image_Mram_ramB670119119 (image/_n0023<4>)
-     FDE:D                     0.074          image/d_outB_4
+     FDRE:C->Q          4316   0.525   3.963  Cont1_6 (Cont1_6)
+     LUT6:I1->O            1   0.254   0.958  image_Mram_ramB1821353 (image_Mram_ramB1821352)
+     LUT5:I1->O            1   0.254   0.000  image_Mram_ramB18213511_F (image_N7848)
+     MUXF7:I0->O           5   0.163   0.841  image_Mram_ramB18213511 (image_Mram_ramB182134)
+     LUT6:I5->O            3   0.254   0.874  image_SF10172 (image_SF1017)
+     LUT6:I4->O            1   0.250   0.910  image_SF131437 (image_SF131440)
+     LUT6:I3->O            1   0.235   0.682  image_SF131442 (image_SF131444)
+     LUT6:I5->O            1   0.254   0.682  image_SF131448 (image_SF131450)
+     LUT6:I5->O            1   0.254   0.682  image_SF131463 (image_SF131464)
+     LUT4:I3->O            4   0.254   0.804  image_SF1314156 (image_SF1314)
+     LUT6:I5->O            1   0.254   0.790  image_SF13169 (image_SF131617)
+     LUT6:I4->O            1   0.250   0.682  image_SF131618 (image_SF131625)
+     LUT6:I5->O            3   0.254   0.766  image_SF131668 (image_SF131671)
+     LUT3:I2->O            5   0.254   0.841  image_SF131669 (image_SF1316)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147102_F (image_N5494)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147104 (image_Mram_ramB182147103)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147105 (image_Mram_ramB182147104)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147106 (image_Mram_ramB182147105)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147107 (image_Mram_ramB182147106)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147205 (image_Mram_ramB182147204)
+     LUT6:I5->O            1   0.254   0.682  image_Mram_ramB182147206 (image_Mram_ramB182147205)
+     LUT5:I4->O            1   0.254   0.000  image_Mram_ramB182147338 (image/_n0023<0>)
+     FDE:D                     0.074          image/d_outB_0
     ----------------------------------------
-    Total                     16.461ns (4.056ns logic, 12.405ns route)
-                                       (24.6% logic, 75.4% route)
+    Total                     24.064ns (5.815ns logic, 18.249ns route)
+                                       (24.2% logic, 75.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -562,21 +564,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   16.461|         |         |         |
+clk            |   24.064|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 78.00 secs
-Total CPU time to Xst completion: 77.20 secs
+Total REAL time to Xst completion: 272.00 secs
+Total CPU time to Xst completion: 271.50 secs
  
 --> 
 
 
-Total memory usage is 409980 kilobytes
+Total memory usage is 540468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   44 (   0 filtered)
-Number of infos    :   12 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
 
