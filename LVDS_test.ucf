@@ -1,7 +1,6 @@
 #OSC
 NET "clk"       LOC = "P84" | IOSTANDARD = LVCMOS33;
 
-NET led   LOC = "P88";
 
 NET "channel1_p" LOC = P79 | IOSTANDARD = BLVDS_25; 
 NET "channel1_n" LOC = P78 | IOSTANDARD = BLVDS_25;

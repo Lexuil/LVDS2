@@ -10,15 +10,13 @@ module LVDS_test(
 	 output channel3_p,
 	 output channel3_n,
 	 output clock_p,
-	 output clock_n,
-	 output reg led
+	 output clock_n
     );
 
 
 wire [7:0] Rimg;
 wire [7:0] Gimg;
 wire [7:0] Bimg;
-reg [30:0]  Contador=0;
 
 reg [30:0]  Cont1=0;
 reg [30:0]  ContRx=0;
@@ -27,7 +25,7 @@ reg [30:0]  ContRh=0;
 reg [1:0]  en=0;
 
 parameter ScreenX = 1366;
-parameter ScreenY = 768;
+parameter ScreenY = 767;
 
 parameter BlankingVertical = 12;
 parameter BlankingHorizontal = 50;
@@ -107,7 +105,7 @@ ram image(
 );
 
 always @(posedge clk6x)begin
-	if(ContadorX == 683)begin
+	if(ContadorX == 450)begin
 		Red   <= 8'hFF;  
 		Green <= 8'hFF;
 		Blue  <= 8'hFF;
@@ -122,28 +120,19 @@ always @(posedge clk6x)begin
 	end
 end
 
-// test led
-
 always @(posedge clk6x)begin
-	Contador <= Contador + 1;
-  if (Contador==36000000*2)begin
-		led <= ~led;
-		Contador <= 0;
-  end
-  if(Cont1 == 9999) begin
-  	Cont1 <= 0;
-  end
-	if((ContadorX < 100) & (ContadorY < 400)) begin
+	if((ContadorX < 400) & (ContadorY < 400)) begin
 		en = 1;
-		if (Cont1 == (((ContadorY%4)*100) + 99)) begin
- 			Cont1 <= (ContadorY%4)*100;
-			if(ContRy == 3) begin
-				ContRy <= 0;
-			end else begin
-				ContRy <= ContRy +1;
-			end
+		if (ContadorX == 399) begin
+ 			Cont1 <= (ContadorY/4)*100;
+ 			ContRx <= 0;
 		end else begin
-			Cont1 <= Cont1 + 1;
+			if (ContRx == 3) begin
+				ContRx <= 0;
+				Cont1 <= Cont1 + 1;
+			end else begin
+				ContRx <= ContRx + 1;
+			end
 		end
 	end else begin
 		en = 0;
@@ -156,11 +145,24 @@ end
 /* 
 
 always @(posedge clk6x)begin
-	Contador <= Contador + 1;
-  if (Contador==36000000*2)begin
-		led <= ~led;
-		Contador <= 0;
-  end
+	if((ContadorX < 400) & (ContadorY < 400)) begin
+		en = 1;
+		if (ContadorX == 399) begin
+ 			Cont1 <= (ContadorY/4)*100;
+		end else begin
+			if (ContRx == 3) begin
+				ContRx <= 0;
+				Cont1 <= Cont1 + 1;
+			end else begin
+				ContRx <= ContRx + 1;
+			end
+		end
+	end else begin
+		en = 0;
+	end
+end
+
+always @(posedge clk6x)begin
 	if((ContadorX < 400) & (ContadorY < 400)) begin
 		en = 1;
 		if (Cont1 == ((ContRh*100) + 99) & ContRx == 3) begin
@@ -190,11 +192,6 @@ always @(posedge clk6x)begin
 end
 
 always @(posedge clk6x)begin
-	Contador <= Contador + 1;
-  if (Contador==36000000*2)begin
-		led <= ~led;
-		Contador <= 0;
-  end
 	if((ContadorX < 400) & (ContadorY < 400)) begin
 		en = 1;
 		if (ContRx == 3) begin
@@ -224,11 +221,6 @@ end
 
 
 always @(posedge clk6x)begin
-	Contador <= Contador + 1;
-  if (Contador==36000000*2)begin
-		led <= ~led;
-		Contador <= 0;
-  end
 	if((ContadorX < 400) & (ContadorY < 400)) begin
 		en = 1;
 		if (ContRx == 3) begin

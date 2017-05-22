@@ -66,15 +66,15 @@ Parsing module <dvi_decoder>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 62: Port CLK180 is not connected to this instance
+WARNING:HDLCompiler:1016 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 60: Port CLK180 is not connected to this instance
 
 Elaborating module <LVDS_test>.
-WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 49: Assignment to clkprueba ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 57: Result of 32-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 58: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 47: Assignment to clkprueba ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 55: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 56: Result of 32-bit expression is truncated to fit in 11-bit target.
 
 Elaborating module <DCM_SP(CLKIN_PERIOD=20,CLKFX_MULTIPLY=7,CLKFX_DIVIDE=5)>.
-WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 73: Assignment to clk_lckd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 71: Assignment to clk_lckd ignored, since the identifier is never used
 
 Elaborating module <BUFG>.
 
@@ -99,13 +99,12 @@ Elaborating module <ram>.
 Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageR.mem\".
 Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageG.mem\".
 Reading initialization file \"media/lexuil/Ubuntu Data/Codigos/LVDS2//scriptimg2ram/imageB.mem\".
-WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 101: Size mismatch in connection of port <d_outR>. Formal port size is 6-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 102: Size mismatch in connection of port <d_outG>. Formal port size is 6-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 103: Size mismatch in connection of port <d_outB>. Formal port size is 6-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 105: Size mismatch in connection of port <addrX>. Formal port size is 16-bit while actual signal size is 31-bit.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 128: Result of 32-bit expression is truncated to fit in 31-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 143: Result of 32-bit expression is truncated to fit in 31-bit target.
-WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 146: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 99: Size mismatch in connection of port <d_outR>. Formal port size is 6-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 100: Size mismatch in connection of port <d_outG>. Formal port size is 6-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 101: Size mismatch in connection of port <d_outB>. Formal port size is 6-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 103: Size mismatch in connection of port <addrX>. Formal port size is 16-bit while actual signal size is 31-bit.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 132: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "/media/lexuil/Ubuntu Data/Codigos/LVDS2/LVDS_test.v" Line 134: Result of 32-bit expression is truncated to fit in 31-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,30 +120,27 @@ Synthesizing Unit <LVDS_test>.
     Found 8-bit register for signal <Red>.
     Found 8-bit register for signal <Green>.
     Found 8-bit register for signal <Blue>.
-    Found 31-bit register for signal <Contador>.
-    Found 1-bit register for signal <led>.
-    Found 31-bit register for signal <Cont1>.
     Found 2-bit register for signal <en>.
+    Found 31-bit register for signal <Cont1>.
+    Found 31-bit register for signal <ContRx>.
     Found 11-bit register for signal <ContadorX>.
-    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_1_OUT> created at line 51.
-    Found 12-bit adder for signal <n0107[11:0]> created at line 57.
-    Found 12-bit adder for signal <n0109[11:0]> created at line 58.
-    Found 31-bit adder for signal <Contador[30]_GND_1_o_add_35_OUT> created at line 128.
-    Found 10-bit adder for signal <n0113[9:0][9:0]> created at line 138.
-    Found 31-bit adder for signal <Cont1[30]_GND_1_o_add_49_OUT> created at line 146.
-    Found 2x7-bit multiplier for signal <ContadorY[1]_PWR_1_o_MuLt_45_OUT> created at line 139.
-    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_6_o> created at line 52
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_7_o> created at line 52
-    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_9_o> created at line 53
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_10_o> created at line 53
-    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_41_o> created at line 136
-    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_42_o> created at line 136
-    Found 31-bit comparator equal for signal <GND_1_o_GND_1_o_equal_45_o> created at line 138
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_1_OUT> created at line 49.
+    Found 12-bit adder for signal <n0103[11:0]> created at line 55.
+    Found 12-bit adder for signal <n0105[11:0]> created at line 56.
+    Found 31-bit adder for signal <Cont1[30]_GND_1_o_add_40_OUT> created at line 132.
+    Found 31-bit adder for signal <ContRx[30]_GND_1_o_add_41_OUT> created at line 134.
+    Found 9x7-bit multiplier for signal <ContadorY[10]_PWR_1_o_MuLt_38_OUT> created at line 127.
+    Found 11-bit comparator greater for signal <GND_1_o_ContadorY[10]_LessThan_6_o> created at line 50
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_7_o> created at line 50
+    Found 11-bit comparator greater for signal <ContadorX[10]_PWR_1_o_LessThan_9_o> created at line 51
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_10_o> created at line 51
+    Found 11-bit comparator greater for signal <ContadorX[10]_GND_1_o_LessThan_36_o> created at line 124
+    Found 11-bit comparator greater for signal <ContadorY[10]_GND_1_o_LessThan_37_o> created at line 124
     Summary:
 	inferred   1 Multiplier(s).
-	inferred   6 Adder/Subtractor(s).
-	inferred 111 D-type flip-flop(s).
-	inferred   7 Comparator(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 110 D-type flip-flop(s).
+	inferred   6 Comparator(s).
 	inferred   2 Multiplexer(s).
 Unit <LVDS_test> synthesized.
 
@@ -206,16 +202,15 @@ Macro Statistics
 # RAMs                                                 : 3
  10000x6-bit single-port Read Only RAM                 : 3
 # Multipliers                                          : 1
- 7x2-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 14
+ 9x7-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 13
  1-bit adder                                           : 4
- 10-bit adder                                          : 1
  12-bit adder                                          : 2
  12-bit subtractor                                     : 1
  3-bit adder                                           : 4
  31-bit adder                                          : 2
-# Registers                                            : 36
- 1-bit register                                        : 13
+# Registers                                            : 35
+ 1-bit register                                        : 12
  11-bit register                                       : 2
  14-bit register                                       : 4
  2-bit register                                        : 5
@@ -223,9 +218,8 @@ Macro Statistics
  31-bit register                                       : 2
  6-bit register                                        : 3
  8-bit register                                        : 3
-# Comparators                                          : 7
+# Comparators                                          : 6
  11-bit comparator greater                             : 6
- 31-bit comparator equal                               : 1
 # Multiplexers                                         : 38
  2-bit 2-to-1 multiplexer                              : 24
  3-bit 2-to-1 multiplexer                              : 4
@@ -248,20 +242,9 @@ WARNING:Xst:2677 - Node <Blue_6> of sequential type is unconnected in block <LVD
 WARNING:Xst:2677 - Node <Blue_7> of sequential type is unconnected in block <LVDS_test>.
 
 Synthesizing (advanced) Unit <LVDS_test>.
-The following registers are absorbed into counter <Contador>: 1 register on signal <Contador>.
 The following registers are absorbed into counter <Cont1>: 1 register on signal <Cont1>.
+The following registers are absorbed into counter <ContRx>: 1 register on signal <ContRx>.
 The following registers are absorbed into counter <ContadorX>: 1 register on signal <ContadorX>.
-INFO:Xst:3230 - The RAM description <image/Mram_ramB> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 10000-word x 6-bit                  |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <Cont1<13:0>>   |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <image/Mram_ramG> will be implemented as a BLOCK RAM, absorbing the following register(s): <image/d_outG>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
@@ -272,11 +255,22 @@ INFO:Xst:3226 - The RAM <image/Mram_ramG> will be implemented as a BLOCK RAM, ab
     |     clkA           | connected to signal <clk6x>         | rise     |
     |     enA            | connected to internal node          | high     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <Cont1<13:0>>   |          |
+    |     addrA          | connected to signal <Cont1>         |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Gimg>          |          |
     -----------------------------------------------------------------------
     | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3230 - The RAM description <image/Mram_ramB> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 10000-word x 6-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Cont1>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <image/Mram_ramR> will be implemented as a BLOCK RAM, absorbing the following register(s): <image/d_outR>
     -----------------------------------------------------------------------
@@ -288,7 +282,7 @@ INFO:Xst:3226 - The RAM <image/Mram_ramR> will be implemented as a BLOCK RAM, ab
     |     clkA           | connected to signal <clk6x>         | rise     |
     |     enA            | connected to internal node          | high     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <Cont1<13:0>>   |          |
+    |     addrA          | connected to signal <Cont1>         |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Rimg>          |          |
     -----------------------------------------------------------------------
@@ -309,9 +303,8 @@ Macro Statistics
  10000x6-bit single-port block Read Only RAM           : 2
  10000x6-bit single-port distributed Read Only RAM     : 1
 # Multipliers                                          : 1
- 7x2-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 3
- 10-bit adder                                          : 1
+ 9x7-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 2
  12-bit adder                                          : 1
  12-bit subtractor                                     : 1
 # Counters                                             : 11
@@ -319,11 +312,10 @@ Macro Statistics
  11-bit up counter                                     : 1
  3-bit up counter                                      : 4
  31-bit up counter                                     : 2
-# Registers                                            : 117
- Flip-Flops                                            : 117
-# Comparators                                          : 7
+# Registers                                            : 116
+ Flip-Flops                                            : 116
+# Comparators                                          : 6
  11-bit comparator greater                             : 6
- 31-bit comparator equal                               : 1
 # Multiplexers                                         : 97
  1-bit 2-to-1 multiplexer                              : 88
  2-bit 2-to-1 multiplexer                              : 8
@@ -337,6 +329,23 @@ Macro Statistics
 WARNING:Xst:1293 - FF/Latch <en_1> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <Red_6> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <Red_7> <Blue_6> <Blue_7> 
 INFO:Xst:2261 - The FF/Latch <Green_6> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <Green_7> 
+WARNING:Xst:2677 - Node <Cont1_14> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_15> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_16> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_17> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_18> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_19> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_20> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_21> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_22> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_23> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_24> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_25> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_26> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_27> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_28> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_29> of sequential type is unconnected in block <LVDS_test>.
+WARNING:Xst:2677 - Node <Cont1_30> of sequential type is unconnected in block <LVDS_test>.
 
 Optimizing unit <LVDS_test> ...
 
@@ -351,10 +360,35 @@ WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_3> 
 WARNING:Xst:1710 - FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_2> (without init value) has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Red_6> of sequential type is unconnected in block <LVDS_test>.
 WARNING:Xst:2677 - Node <Green_6> of sequential type is unconnected in block <LVDS_test>.
-WARNING:Xst:1293 - FF/Latch <Contador_27> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Contador_28> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Contador_29> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Contador_30> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_30> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_28> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_27> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_29> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_25> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_24> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_26> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_22> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_21> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_23> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_19> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_18> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_20> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_16> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_15> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_17> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_13> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_12> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_14> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_10> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_9> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_11> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_7> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_6> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_8> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_4> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_3> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_5> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ContRx_2> has a constant value of 0 in block <LVDS_test>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/datacount> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/datacount> <videoencoder/channel2_ser/datacount> <videoencoder/channel1_ser/datacount> 
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/buffer_0_8> in Unit <LVDS_test> is equivalent to the following FF/Latch, which will be removed : <videoencoder/clockgenerator/lvdsclkman/buffer_0_13> 
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/outcount_0> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/outcount_0> <videoencoder/channel2_ser/outcount_0> <videoencoder/channel1_ser/outcount_0> 
@@ -365,8 +399,7 @@ INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/DataInBuffe
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <videoencoder/clockgenerator/lvdsclkman/SendOK> in Unit <LVDS_test> is equivalent to the following 3 FFs/Latches, which will be removed : <videoencoder/channel3_ser/SendOK> <videoencoder/channel2_ser/SendOK> <videoencoder/channel1_ser/SendOK> 
-Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 74.
-FlipFlop led has been replicated 1 time(s) to handle iob=true attribute.
+Found area constraint ratio of 100 (+ 0) on block LVDS_test, actual ratio is 72.
 
 Final Macro Processing ...
 
@@ -374,8 +407,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 171
- Flip-Flops                                            : 171
+# Registers                                            : 127
+ Flip-Flops                                            : 127
 
 =========================================================================
 
@@ -398,36 +431,35 @@ Top Level Output File Name         : project.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2011
+# BELS                             : 1886
 #      GND                         : 1
-#      INV                         : 21
-#      LUT1                        : 47
-#      LUT2                        : 60
-#      LUT3                        : 140
-#      LUT4                        : 90
-#      LUT5                        : 198
-#      LUT6                        : 1089
-#      MUXCY                       : 94
+#      INV                         : 19
+#      LUT1                        : 22
+#      LUT2                        : 61
+#      LUT3                        : 123
+#      LUT4                        : 89
+#      LUT5                        : 199
+#      LUT6                        : 1081
+#      MUXCY                       : 53
 #      MUXF7                       : 146
 #      MUXF8                       : 32
 #      VCC                         : 1
-#      XORCY                       : 92
-# FlipFlops/Latches                : 175
+#      XORCY                       : 59
+# FlipFlops/Latches                : 131
 #      FD                          : 6
 #      FDC                         : 54
 #      FDCE                        : 9
-#      FDE                         : 19
-#      FDR                         : 46
-#      FDRE                        : 31
+#      FDE                         : 31
+#      FDR                         : 19
+#      FDRE                        : 2
 #      FDS                         : 6
 #      ODDR2                       : 4
 # RAMS                             : 12
 #      RAMB16BWER                  : 12
 # Clock Buffers                    : 5
 #      BUFG                        : 5
-# IO Buffers                       : 6
+# IO Buffers                       : 5
 #      IBUFG                       : 1
-#      OBUF                        : 1
 #      OBUFDS                      : 4
 # DCMs                             : 2
 #      DCM_SP                      : 2
@@ -439,21 +471,20 @@ Selected Device : 6slx4tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             174  out of   4800     3%  
- Number of Slice LUTs:                 1645  out of   2400    68%  
-    Number used as Logic:              1645  out of   2400    68%  
+ Number of Slice Registers:             131  out of   4800     2%  
+ Number of Slice LUTs:                 1594  out of   2400    66%  
+    Number used as Logic:              1594  out of   2400    66%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1653
-   Number with an unused Flip Flop:    1479  out of   1653    89%  
-   Number with an unused LUT:             8  out of   1653     0%  
-   Number of fully used LUT-FF pairs:   166  out of   1653    10%  
-   Number of unique control sets:        15
+ Number of LUT Flip Flop pairs used:   1602
+   Number with an unused Flip Flop:    1471  out of   1602    91%  
+   Number with an unused LUT:             8  out of   1602     0%  
+   Number of fully used LUT-FF pairs:   123  out of   1602     7%  
+   Number of unique control sets:        14
 
 IO Utilization: 
- Number of IOs:                          10
- Number of bonded IOBs:                  10  out of    102     9%  
-    IOB Flip Flops/Latches:               1
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    102     8%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               12  out of     12   100%  
@@ -481,7 +512,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 171   |
+clk                                | DCM_SP:CLKFX+DCM_SP:CLK0    | 127   |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX   | 16    |
 clk                                | DCM_SP:CLKFX+DCM_SP:CLKFX180| 4     |
 -----------------------------------+-----------------------------+-------+
@@ -494,9 +525,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 23.051ns (Maximum Frequency: 43.382MHz)
+   Minimum period: 23.050ns (Maximum Frequency: 43.383MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.118ns
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -505,10 +536,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 23.051ns (frequency: 43.382MHz)
-  Total number of paths / destination ports: 54834 / 560
+  Clock period: 23.050ns (frequency: 43.383MHz)
+  Total number of paths / destination ports: 34296 / 443
 -------------------------------------------------------------------------
-Delay:               16.465ns (Levels of Logic = 14)
+Delay:               16.464ns (Levels of Logic = 14)
   Source:            Cont1_7 (FF)
   Destination:       image/d_outB_4 (FF)
   Source Clock:      clk rising 1.4X
@@ -518,7 +549,7 @@ Delay:               16.465ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q           532   0.525   2.895  Cont1_7 (Cont1_7)
+     FDE:C->Q            530   0.525   2.894  Cont1_7 (Cont1_7)
      LUT5:I0->O            1   0.254   0.682  image/Mram_ramB670126 (image/Mram_ramB670125)
      LUT6:I5->O            1   0.254   0.790  image/Mram_ramB670127 (image/Mram_ramB670126)
      LUT6:I4->O           13   0.250   1.098  image/Mram_ramB670128 (image/Mram_ramB67011)
@@ -535,27 +566,8 @@ Delay:               16.465ns (Levels of Logic = 14)
      LUT6:I5->O            1   0.254   0.000  image/Mram_ramB670119119 (image/_n0023<4>)
      FDE:D                     0.074          image/d_outB_4
     ----------------------------------------
-    Total                     16.465ns (4.056ns logic, 12.409ns route)
+    Total                     16.464ns (4.056ns logic, 12.408ns route)
                                        (24.6% logic, 75.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.118ns (Levels of Logic = 1)
-  Source:            led_1 (FF)
-  Destination:       led (PAD)
-  Source Clock:      clk rising 1.4X
-
-  Data Path: led_1 to led
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              1   0.525   0.681  led_1 (led_1)
-     OBUF:I->O                 2.912          led_OBUF (led)
-    ----------------------------------------
-    Total                      4.118ns (3.437ns logic, 0.681ns route)
-                                       (83.5% logic, 16.5% route)
 
 =========================================================================
 
@@ -567,21 +579,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   16.465|         |         |         |
+clk            |   16.464|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 88.00 secs
-Total CPU time to Xst completion: 87.35 secs
+Total REAL time to Xst completion: 82.00 secs
+Total CPU time to Xst completion: 81.28 secs
  
 --> 
 
 
-Total memory usage is 410252 kilobytes
+Total memory usage is 410052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
 Number of infos    :   12 (   0 filtered)
 

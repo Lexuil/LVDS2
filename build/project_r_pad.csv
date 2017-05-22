@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (lin64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Sun May 21 12:50:49 2017
+#Mon May 22 16:44:19 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -106,7 +106,7 @@ P84,clk,IOB,IO_L43N_GCLK4_1,INPUT,LVCMOS33,1,,,,NONE,,LOCATED,NO,NONE,
 P85,,IOBM,IO_L43P_GCLK5_1,UNUSED,,1,,,,,,,,,
 P86,,,VCCO_1,,,1,,,,,2.50,,,,
 P87,,IOBS,IO_L42N_GCLK6_TRDY1_1,UNUSED,,1,,,,,,,,,
-P88,led,IOB,IO_L42P_GCLK7_1,OUTPUT,LVCMOS25*,1,12,SLOW,,,,LOCATED,YES,NONE,
+P88,,IOBM,IO_L42P_GCLK7_1,UNUSED,,1,,,,,,,,,
 P89,,,VCCINT,,,,,,,,1.2,,,,
 P90,,,VCCAUX,,,,,,,,2.5,,,,
 P91,,,GND,,,,,,,,,,,,

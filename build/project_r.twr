@@ -52,7 +52,6 @@ clock_n     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |video
             |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
 clock_p     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
             |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
-led         |         6.470(R)|      SLOW  |         2.315(R)|      FAST  |clk6x_BUFG                |   0.000|
 ------------+-----------------+------------+-----------------+------------+--------------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -60,18 +59,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   15.414|         |         |         |
+clk            |   14.279|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun May 21 12:50:59 2017 
+Analysis completed Mon May 22 16:44:30 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 397 MB
+Peak Memory Usage: 396 MB
 
 
 
