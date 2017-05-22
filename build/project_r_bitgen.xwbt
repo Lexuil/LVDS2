@@ -1,0 +1,7 @@
+INFILE=/media/lexuil/Ubuntu Data/Codigos/LVDS2/build/project_r.ncd
+OUTFILE=/media/lexuil/Ubuntu Data/Codigos/LVDS2/build/project_r.bit
+FAMILY=Spartan6
+PART=xc6slx4-2tqg144
+WORKINGDIR=/media/lexuil/Ubuntu Data/Codigos/LVDS2/build
+LICENSE=WebPack
+USER_INFO=211315887_0_0_657

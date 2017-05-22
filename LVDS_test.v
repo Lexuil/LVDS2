@@ -21,6 +21,9 @@ wire [7:0] Bimg;
 reg [30:0]  Contador=0;
 
 reg [30:0]  Cont1=0;
+reg [30:0]  ContRx=0;
+reg [30:0]  ContRy=0;
+reg [30:0]  ContRh=0;
 reg [1:0]  en=0;
 
 parameter ScreenX = 1366;
@@ -104,11 +107,7 @@ ram image(
 );
 
 always @(posedge clk6x)begin
-	if(ContadorX > 682 & ContadorX < 684)begin
-		Red   <= 8'hFF;  
-		Green <= 8'hFF;
-		Blue  <= 8'hFF;
-	end else if(ContadorY > 383 & ContadorY < 385)begin
+	if(ContadorX == 683)begin
 		Red   <= 8'hFF;  
 		Green <= 8'hFF;
 		Blue  <= 8'hFF;
@@ -131,10 +130,18 @@ always @(posedge clk6x)begin
 		led <= ~led;
 		Contador <= 0;
   end
-	if((ContadorX < 200) & (ContadorY < 200)) begin
+  if(Cont1 == 9999) begin
+  	Cont1 <= 0;
+  end
+	if((ContadorX < 100) & (ContadorY < 400)) begin
 		en = 1;
-		if (Cont1 == 39999) begin
-				Cont1 <= 0;
+		if (Cont1 == (((ContadorY%4)*100) + 99)) begin
+ 			Cont1 <= (ContadorY%4)*100;
+			if(ContRy == 3) begin
+				ContRy <= 0;
+			end else begin
+				ContRy <= ContRy +1;
+			end
 		end else begin
 			Cont1 <= Cont1 + 1;
 		end
@@ -147,6 +154,99 @@ end
 
 
 /* 
+
+always @(posedge clk6x)begin
+	Contador <= Contador + 1;
+  if (Contador==36000000*2)begin
+		led <= ~led;
+		Contador <= 0;
+  end
+	if((ContadorX < 400) & (ContadorY < 400)) begin
+		en = 1;
+		if (Cont1 == ((ContRh*100) + 99) & ContRx == 3) begin
+			if(ContRy == 3) begin
+				ContRy <= 0;
+				if(ContRh == 99) begin
+					ContRh <= 0;
+				end else begin
+					ContRh <= ContRh + 1;
+				end
+			end else begin
+				ContRy <= ContRy +1;
+			end
+ 			Cont1 <= ContRh*100;
+ 			ContRx <= 0;
+		end else begin
+			if (ContRx == 3) begin
+				ContRx <= 0;
+				Cont1 <= Cont1 + 1;
+			end else begin
+				ContRx <= ContRx + 1;
+			end
+		end
+	end else begin
+		en = 0;
+	end
+end
+
+always @(posedge clk6x)begin
+	Contador <= Contador + 1;
+  if (Contador==36000000*2)begin
+		led <= ~led;
+		Contador <= 0;
+  end
+	if((ContadorX < 400) & (ContadorY < 400)) begin
+		en = 1;
+		if (ContRx == 3) begin
+			ContRx <= 0;
+			if (Cont1 == ((ContRh*99) + 99)) begin				
+				Cont1 <= ContRh*99;
+				if(ContRy == 3) begin
+					ContRy <= 0;
+					if(ContRh == 99) begin
+						ContRh <= 0;
+					end else begin
+						ContRh <= ContRh + 1;
+					end
+				end else begin
+					ContRy <= ContRy +1;
+				end
+			end else begin
+				Cont1 <= Cont1 + 1;
+			end
+		end else begin
+			ContRx <= ContRx + 1;
+		end
+	end else begin
+		en = 0;
+	end
+end
+
+
+always @(posedge clk6x)begin
+	Contador <= Contador + 1;
+  if (Contador==36000000*2)begin
+		led <= ~led;
+		Contador <= 0;
+  end
+	if((ContadorX < 400) & (ContadorY < 400)) begin
+		en = 1;
+		if (ContRx == 3) begin
+			ContRx <= 0;
+			if (Cont1 == 9999) begin				
+				Cont1 <= 0;
+			end else begin
+				Cont1 <= Cont1 + 1;
+			end
+		end else begin
+			ContRx <= ContRx + 1;
+		end
+	end else begin
+		en = 0;
+	end
+end
+
+
 parameter tm = (1<<13) -1;
 
 reg    [7:0] ramR [0:39999];

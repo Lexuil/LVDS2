@@ -17,11 +17,20 @@
 <msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
 </msg>
 
-<msg type="error" file="Pack" num="2412" delta="new" >The number of logical LUT blocks exceeds the capacity for the target device.
+<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="error" file="Map" num="237" delta="new" >The design is too large to fit the device.  Please check the Design Summary section to see which resource requirement for your design exceeds the resources available in the device. Note that the number of slices reported may not be reflected accurately as their packing might not have been completed.
- </msg>
+<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1861" delta="new" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">videoencoder/clockgenerator/dcm_clk</arg>, consult the device Data Sheet.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="774" delta="new" >Unexpected DCM configuration. CLKOUT_PHASE_SHIFT is not configured VARIABLE for comp <arg fmt="%s" index="1">dcm_main</arg>. The PSEN pin is connected to an active signal. The PSEN pin should be connected to GND to guarantee the expected operation.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1861" delta="new" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">dcm_main</arg>, consult the device Data Sheet.
+</msg>
 
 </messages>
 

@@ -7,15 +7,15 @@ module ram(
 	input [1:0]en
 );
 
-reg    [5:0] ramR [0:39999];
-reg    [5:0] ramG [0:39999];
-reg    [5:0] ramB [0:39999]; 
+reg    [5:0] ramR [0:9999];
+reg    [5:0] ramG [0:9999];
+reg    [5:0] ramB [0:9999];
 
 always @(posedge clkq) begin
 	if(en) begin
-		d_outR <= ramR[addrX];
-		d_outG <= ramG[addrX];
-		d_outB <= ramB[addrX];
+		d_outR = ramR[addrX];
+		d_outG = ramG[addrX];
+		d_outB = ramB[addrX];
 	end
 end
 

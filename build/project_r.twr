@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -v 25 project_r.ncd
+project.pcf
+
+Design file:              project_r.ncd
+Physical constraint file: project.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report, limited to 25 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                          | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)         | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+channel1_n  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel1_p  |         6.253(R)|      SLOW  |         2.120(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.191(R)|      SLOW  |         2.054(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel2_n  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel2_p  |         6.245(R)|      SLOW  |         2.112(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.184(R)|      SLOW  |         2.047(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel3_n  |         6.250(R)|      SLOW  |         2.117(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.188(R)|      SLOW  |         2.051(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+channel3_p  |         6.250(R)|      SLOW  |         2.117(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.188(R)|      SLOW  |         2.051(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+clock_n     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+clock_p     |         6.254(R)|      SLOW  |         2.121(R)|      FAST  |videoencoder/clk35_BUFG   |   0.000|
+            |         6.193(R)|      SLOW  |         2.056(R)|      FAST  |videoencoder/notclk35_BUFG|   0.000|
+led         |         6.470(R)|      SLOW  |         2.315(R)|      FAST  |clk6x_BUFG                |   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   15.414|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun May 21 12:50:59 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 397 MB
+
+
+
