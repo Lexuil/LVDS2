@@ -1,17 +1,16 @@
 `timescale 1ns / 1ps
 
 module LVDS_test(
-    input clk,
-
-	 output channel1_p,
-	 output channel1_n,
-	 output channel2_p,
-	 output channel2_n,
-	 output channel3_p,
-	 output channel3_n,
-	 output clock_p,
-	 output clock_n
-    );
+	input clk,
+	output channel1_p,
+	output channel1_n,
+	output channel2_p,
+	output channel2_n,
+	output channel3_p,
+	output channel3_n,
+	output clock_p,
+	output clock_n
+);
 
 
 wire [7:0] Rimg;
@@ -20,15 +19,14 @@ wire [7:0] Bimg;
 
 reg [30:0]  Cont1=0;
 reg [30:0]  ContRx=0;
-reg [30:0]  ContRy=0;
-reg [30:0]  ContRh=0;
 reg [1:0]  en=0;
 
-parameter ScreenX = 1366;
+parameter ScreenX = 1365;
 parameter ScreenY = 767;
 
 parameter BlankingVertical = 12;
 parameter BlankingHorizontal = 50;
+
 
 wire clo,clk6x,clk_lckd, clkdcm;
 
@@ -37,17 +35,12 @@ reg [7:0] Blue  = 8'h0;
 reg [7:0] Green = 8'hFF;
 
 
-
 reg [10:0] ContadorX = ScreenX+BlankingHorizontal-3; // Contador de colunas
 reg [10:0] ContadorY = ScreenY+BlankingVertical; // Contador de lineas
 
 
-
-
-assign clkprueba =clk6x;
-
 wire HSync =(((ContadorX-1)==ScreenX) & ((ContadorX-1)==(ScreenX+(BlankingHorizontal/2))))?0:1;
-wire VSync =((ContadorY>ScreenY) & (ContadorY<(ScreenY+(BlankingVertical/2))))?0:1;
+wire VSync =(((ContadorY)>ScreenY) & ((ContadorY)<(ScreenY+(BlankingVertical/2))))?0:1;
 wire DataEnable = ((ContadorX<ScreenX) & (ContadorY<ScreenY));
 
 always @(posedge clk6x) begin
@@ -104,12 +97,10 @@ ram image(
 	.en(en)
 );
 
+//Ram
+
 always @(posedge clk6x)begin
-	if(ContadorX == 450)begin
-		Red   <= 8'hFF;  
-		Green <= 8'hFF;
-		Blue  <= 8'hFF;
-	end else if(en == 1)begin
+	if(en == 1)begin
 		Red   <= Rimg;  
 		Green <= Gimg;
 		Blue  <= Bimg;
@@ -120,14 +111,15 @@ always @(posedge clk6x)begin
 	end
 end
 
+
 always @(posedge clk6x)begin
-	if((ContadorX < 400) & (ContadorY < 400)) begin
+	if((ContadorX < 1364) & (ContadorY < 765)) begin
 		en = 1;
-		if (ContadorX == 399) begin
- 			Cont1 <= (ContadorY/4)*100;
+		if (ContadorX == 1363) begin
+ 			Cont1 <= ((ContadorY+2)/8)*100;
  			ContRx <= 0;
 		end else begin
-			if (ContRx == 3) begin
+			if (ContRx == 13) begin
 				ContRx <= 0;
 				Cont1 <= Cont1 + 1;
 			end else begin
